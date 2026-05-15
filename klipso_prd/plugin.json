@@ -1,0 +1,21 @@
+{
+  "name": "klipso-prd",
+  "version": "1.0.0",
+  "description": "Open-source PRD generator with 20 reasoning strategies (arXiv-sourced), 24 hard output rules, 8 PRD types, and Firecrawl competitive intelligence. LATAM-aware context.",
+  "author": "klipso_pm",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "klipso-prd",
+      "path": "skills/klipso-prd/SKILL.md",
+      "triggers": ["generate prd", "create prd", "write prd", "prd for", "product requirements"]
+    }
+  ],
+  "commands": [
+    {
+      "name": "generate-prd",
+      "path": "skills/klipso-prd/SKILL.md",
+      "description": "Generate a full PRD with JIRA tickets, test cases, and verification report"
+    }
+  ]
+}
