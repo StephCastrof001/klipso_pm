@@ -1,0 +1,115 @@
+package code.actorsystem
+
+import code.api.util.APIUtil
+import code.util.Helper
+
+
+object ObpActorConfig {
+
+  val localHostname = "127.0.0.1"
+  def localPort = {
+    val systemPort = APIUtil.getPropsAsIntValue("pekko.remote.artery.canonical.port", 0)
+    if (systemPort == 0) {
+      Helper.findAvailablePort()
+    } else {
+      systemPort
+    }
+  }
+
+  val akka_loglevel = APIUtil.getPropsValue("remotedata.loglevel").openOr("INFO")
+
+  val commonConf = 
+  """
+  pekko {
+    loggers = ["org.apache.pekko.event.slf4j.Slf4jLogger"]
+    loglevel =  """ + akka_loglevel + """
+    actor {
+      provider = "org.apache.pekko.remote.RemoteActorRefProvider"
+      allow-java-serialization = on
+      kryo  {
+      type = "graph"
+      idstrategy = "default"
+      buffer-size = 65536
+      max-buffer-size = -1
+      use-manifests = false
+      use-unsafe = true
+      post-serialization-transformations = "off"
+      #post-serialization-transformations = "lz4,aes"
+      #encryption {
+      #  aes {
+      #      mode = "AES/CBC/PKCS5Padding"
+      #      key = j68KkRjq21ykRGAQ
+      #      IV-length = 16
+      #  }
+      #}
+      implicit-registration-logging = false
+      kryo-trace = false
+      resolve-subclasses = true
+      }
+      serializers {
+        java = "org.apache.pekko.serialization.JavaSerializer"
+      }
+      serialization-bindings {
+        "net.liftweb.common.Full" = java,
+        "net.liftweb.common.Empty" = java,
+        "net.liftweb.common.Box" = java,
+        "net.liftweb.common.ParamFailure" = java,
+        "code.api.APIFailure" = java,
+        "com.openbankproject.commons.model.BankAccount" = java,
+        "com.openbankproject.commons.model.View" = java,
+        "com.openbankproject.commons.model.User" = java,
+        "com.openbankproject.commons.model.ViewId" = java,
+        "com.openbankproject.commons.model.BankIdAccountIdViewId" = java,
+        "com.openbankproject.commons.model.Permission" = java,
+        "scala.Unit" = java,
+        "scala.Boolean" = java,
+        "java.io.Serializable" = java,
+        "scala.collection.immutable.List" = java,
+        "org.apache.pekko.actor.ActorSelectionMessage" = java,
+        "code.model.Consumer" = java,
+        "code.model.AppType" = java
+      }
+    }
+    remote {
+      artery {
+        transport = tcp
+        canonical.hostname = """ + localHostname + """
+        canonical.port = 0
+        bind.hostname = """ + localHostname + """
+        bind.port = 0
+        advanced {
+          maximum-frame-size = 52428800
+          buffer-pool-size = 128
+          maximum-large-frame-size = 52428800
+        }
+      }
+    }
+  }
+  """
+
+  val lookupConf = 
+  s"""
+  ${commonConf} 
+  pekko {
+    remote.artery {
+      canonical.hostname = ${localHostname}
+      canonical.port = 0
+      bind.hostname = ${localHostname}
+      bind.port = 0
+    }
+  }
+  """
+
+  val localConf =
+  s"""
+  ${commonConf} 
+  pekko {
+    remote.artery {
+      canonical.hostname = ${localHostname}
+      canonical.port = ${localPort}
+      bind.hostname = ${localHostname}
+      bind.port = ${localPort}
+    }
+  }
+  """
+}

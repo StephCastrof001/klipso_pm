@@ -1,0 +1,262 @@
+name: Validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node 22.x
+        uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+
+      - name: Install Astro/Starlight dependencies
+        run: npm ci
+
+      - name: Validate commands (bash)
+        if: matrix.os == 'ubuntu-latest'
+        run: bash scripts/validate-commands.sh
+
+      - name: Validate commands (pwsh)
+        if: matrix.os == 'windows-latest'
+        run: pwsh -File scripts/validate-commands.ps1
+
+      - name: Validate AGENTS.md sync (bash)
+        if: matrix.os == 'ubuntu-latest'
+        run: bash scripts/validate-agents-md.sh
+
+      - name: Validate AGENTS.md sync (pwsh)
+        if: matrix.os == 'windows-latest'
+        run: pwsh -File scripts/validate-agents-md.ps1
+
+      - name: Lint skills front matter (bash)
+        if: matrix.os == 'ubuntu-latest'
+        run: bash scripts/lint-skills-frontmatter.sh
+
+      - name: Lint skills front matter (pwsh)
+        if: matrix.os == 'windows-latest'
+        run: pwsh -File scripts/lint-skills-frontmatter.ps1
+
+      - name: Validate meeting-skills-family contract (bash)
+        if: matrix.os == 'ubuntu-latest'
+        run: bash scripts/validate-meeting-skills-family.sh
+
+      - name: Validate meeting-skills-family contract (pwsh)
+        if: matrix.os == 'windows-latest'
+        run: pwsh -File scripts/validate-meeting-skills-family.ps1
+
+      - name: Check MCP impact (bash)
+        if: matrix.os == 'ubuntu-latest'
+        run: bash scripts/check-mcp-impact.sh
+        continue-on-error: true
+
+      - name: Check MCP impact (pwsh)
+        if: matrix.os == 'windows-latest'
+        run: pwsh -File scripts/check-mcp-impact.ps1
+        continue-on-error: true
+
+      - name: Check CONTEXT.md currency (bash)
+        if: matrix.os == 'ubuntu-latest'
+        run: bash scripts/check-context-currency.sh
+        continue-on-error: true
+
+      - name: Check CONTEXT.md currency (pwsh)
+        if: matrix.os == 'windows-latest'
+        run: pwsh -File scripts/check-context-currency.ps1
+        continue-on-error: true
+
+      - name: Validate skill HISTORY.md (bash)
+        if: matrix.os == 'ubuntu-latest'
+        run: bash scripts/validate-skill-history.sh
+        continue-on-error: true
+
+      - name: Validate skill HISTORY.md (pwsh)
+        if: matrix.os == 'windows-latest'
+        run: pwsh -File scripts/validate-skill-history.ps1
+        continue-on-error: true
+
+      - name: Validate skills manifest (bash)
+        if: matrix.os == 'ubuntu-latest'
+        run: bash scripts/validate-skills-manifest.sh
+        continue-on-error: true
+
+      - name: Validate skills manifest (pwsh)
+        if: matrix.os == 'windows-latest'
+        run: pwsh -File scripts/validate-skills-manifest.ps1
+        continue-on-error: true
+
+      - name: Check stale bundle refs (bash)
+        if: matrix.os == 'ubuntu-latest'
+        run: bash scripts/check-stale-bundle-refs.sh
+        continue-on-error: true
+
+      - name: Check stale bundle refs (pwsh)
+        if: matrix.os == 'windows-latest'
+        run: pwsh -File scripts/check-stale-bundle-refs.ps1
+        continue-on-error: true
+
+      - name: Validate version consistency (bash)
+        if: matrix.os == 'ubuntu-latest'
+        run: bash scripts/validate-version-consistency.sh
+
+      - name: Validate version consistency (pwsh)
+        if: matrix.os == 'windows-latest'
+        run: pwsh -File scripts/validate-version-consistency.ps1
+
+      - name: Validate plugin install path (bash, enforcing)
+        if: matrix.os == 'ubuntu-latest'
+        run: bash scripts/validate-plugin-install.sh
+
+      - name: Validate plugin install path (pwsh, enforcing)
+        if: matrix.os == 'windows-latest'
+        run: pwsh -File scripts/validate-plugin-install.ps1
+
+      - name: Validate _pm-skills/ in .gitignore (bash)
+        if: matrix.os == 'ubuntu-latest'
+        run: bash scripts/validate-gitignore-pm-skills.sh
+        continue-on-error: true
+
+      - name: Validate _pm-skills/ in .gitignore (pwsh)
+        if: matrix.os == 'windows-latest'
+        run: pwsh -File scripts/validate-gitignore-pm-skills.ps1
+        continue-on-error: true
+
+      - name: Validate script documentation (bash)
+        if: matrix.os == 'ubuntu-latest'
+        run: bash scripts/validate-script-docs.sh
+        continue-on-error: true
+
+      - name: Validate script documentation (pwsh)
+        if: matrix.os == 'windows-latest'
+        run: pwsh -File scripts/validate-script-docs.ps1
+        continue-on-error: true
+
+      - name: Check workflow coverage (bash)
+        if: matrix.os == 'ubuntu-latest'
+        run: bash scripts/check-workflow-coverage.sh
+        continue-on-error: true
+
+      - name: Check workflow coverage (pwsh)
+        if: matrix.os == 'windows-latest'
+        run: pwsh -File scripts/check-workflow-coverage.ps1
+        continue-on-error: true
+
+      - name: Check count consistency (bash)
+        if: matrix.os == 'ubuntu-latest'
+        run: bash scripts/check-count-consistency.sh
+
+      - name: Check count consistency (pwsh)
+        if: matrix.os == 'windows-latest'
+        run: pwsh -File scripts/check-count-consistency.ps1
+
+      - name: Check generated freshness (bash)
+        if: matrix.os == 'ubuntu-latest'
+        run: bash scripts/check-generated-freshness.sh
+        continue-on-error: true
+
+      - name: Check generated freshness (pwsh)
+        if: matrix.os == 'windows-latest'
+        run: pwsh -File scripts/check-generated-freshness.ps1
+        continue-on-error: true
+
+      - name: Check version references (bash)
+        if: always() && matrix.os == 'ubuntu-latest'
+        run: bash scripts/check-version-references.sh
+        continue-on-error: true
+
+      - name: Check version references (pwsh)
+        if: always() && matrix.os == 'windows-latest'
+        run: pwsh -File scripts/check-version-references.ps1
+        continue-on-error: true
+
+      - name: Validate docs frontmatter (bash, enforcing)
+        if: always() && matrix.os == 'ubuntu-latest'
+        run: bash scripts/validate-docs-frontmatter.sh --strict
+
+      - name: Validate docs frontmatter (pwsh, enforcing)
+        if: always() && matrix.os == 'windows-latest'
+        run: pwsh -File scripts/validate-docs-frontmatter.ps1 -Strict
+
+      - name: Validate skill family registration (bash, enforcing)
+        if: always() && matrix.os == 'ubuntu-latest'
+        run: bash scripts/validate-skill-family-registration.sh
+
+      - name: Validate skill family registration (pwsh, enforcing)
+        if: always() && matrix.os == 'windows-latest'
+        run: pwsh -File scripts/validate-skill-family-registration.ps1
+
+      - name: Check internal link validity (bash, enforcing)
+        if: always() && matrix.os == 'ubuntu-latest'
+        run: bash scripts/check-internal-link-validity.sh --strict
+
+      - name: Check internal link validity (pwsh, enforcing)
+        if: always() && matrix.os == 'windows-latest'
+        run: pwsh -File scripts/check-internal-link-validity.ps1 -Strict
+
+      - name: Check no body H1 duplication (bash, enforcing)
+        if: always() && matrix.os == 'ubuntu-latest'
+        run: bash scripts/check-no-body-h1.sh --strict
+
+      - name: Check no body H1 duplication (pwsh, enforcing)
+        if: always() && matrix.os == 'windows-latest'
+        run: pwsh -File scripts/check-no-body-h1.ps1 -Strict
+
+      - name: Check generated content untouched (bash, enforcing)
+        if: always() && matrix.os == 'ubuntu-latest'
+        run: bash scripts/check-generated-content-untouched.sh
+
+      - name: Check generated content untouched (pwsh, enforcing)
+        if: always() && matrix.os == 'windows-latest'
+        run: pwsh -File scripts/check-generated-content-untouched.ps1
+
+      - name: Validate cross-doc references (bash, enforcing)
+        if: always() && matrix.os == 'ubuntu-latest'
+        run: bash scripts/validate-references-cross-doc.sh
+
+      - name: Validate cross-doc references (pwsh, enforcing)
+        if: always() && matrix.os == 'windows-latest'
+        run: pwsh -File scripts/validate-references-cross-doc.ps1
+
+      - name: Build site with Astro Starlight (enforcing)
+        if: always()
+        run: npm run build
+
+      - name: Check internal/ exclusion from dist (bash, enforcing)
+        if: always() && matrix.os == 'ubuntu-latest'
+        run: |
+          leaks=$(find dist/ -path '*internal*' -type f 2>/dev/null)
+          if [ -n "$leaks" ]; then
+            echo "FAIL: internal/ paths leaked into dist/:"
+            echo "$leaks" | head -10
+            exit 1
+          fi
+          echo "PASS: no internal/ paths in dist/"
+
+      - name: Check internal/ exclusion from dist (pwsh, enforcing)
+        if: always() && matrix.os == 'windows-latest'
+        run: |
+          $leaks = Get-ChildItem -Path dist -Recurse -File -ErrorAction SilentlyContinue | Where-Object { $_.FullName -match 'internal' }
+          if ($leaks.Count -gt 0) {
+            Write-Output "FAIL: internal/ paths leaked into dist/: $($leaks.Count) files"
+            $leaks | Select-Object -First 10 | ForEach-Object { Write-Output $_.FullName }
+            exit 1
+          }
+          Write-Output "PASS: no internal/ paths in dist/"
+
+      - name: Verify edit-link resolution (enforcing)
+        if: always()
+        run: node scripts/verify-edit-links.mjs dist .

@@ -1,0 +1,131 @@
+name: Validate Plugin Packaging
+
+on:
+  pull_request:
+    paths:
+      - ".claude-plugin/**"
+      - "skills/**"
+      - "commands/**"
+      - "scripts/build-release.sh"
+      - "scripts/build-release.ps1"
+      - ".github/workflows/validate-plugin.yml"
+      - ".github/workflows/release.yml"
+  push:
+    branches:
+      - main
+    tags:
+      - "v*"
+    paths:
+      - ".claude-plugin/**"
+      - "skills/**"
+      - "commands/**"
+      - "scripts/build-release.sh"
+      - "scripts/build-release.ps1"
+      - ".github/workflows/validate-plugin.yml"
+      - ".github/workflows/release.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-plugin:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate plugin manifest shape
+        run: |
+          node - <<'NODE'
+          const fs = require("fs");
+
+          const path = ".claude-plugin/plugin.json";
+          if (!fs.existsSync(path)) {
+            console.error(`Missing ${path}`);
+            process.exit(1);
+          }
+
+          const manifest = JSON.parse(fs.readFileSync(path, "utf8"));
+          const requiredStringFields = ["name", "version", "description", "homepage", "repository", "license"];
+          for (const field of requiredStringFields) {
+            if (typeof manifest[field] !== "string" || manifest[field].trim().length === 0) {
+              console.error(`Invalid or missing string field: ${field}`);
+              process.exit(1);
+            }
+          }
+
+          if (manifest.name !== "pm-skills") {
+            console.error(`Expected manifest name 'pm-skills', got '${manifest.name}'`);
+            process.exit(1);
+          }
+
+          if (!/^\d+\.\d+\.\d+$/.test(manifest.version)) {
+            console.error(`Manifest version must be semver X.Y.Z, got '${manifest.version}'`);
+            process.exit(1);
+          }
+
+          if (!manifest.author || typeof manifest.author.name !== "string" || manifest.author.name.trim().length === 0) {
+            console.error("Manifest author.name is required");
+            process.exit(1);
+          }
+
+          if (!Array.isArray(manifest.keywords) || manifest.keywords.length === 0) {
+            console.error("Manifest keywords must be a non-empty array");
+            process.exit(1);
+          }
+          NODE
+
+      - name: Validate skill front matter
+        run: bash scripts/lint-skills-frontmatter.sh
+
+      - name: Validate AGENTS.md sync
+        run: bash scripts/validate-agents-md.sh
+
+      - name: Validate command mappings
+        run: bash scripts/validate-commands.sh
+
+      - name: Validate Cowork compatibility (ZIP under 50MB)
+        run: |
+          set -euo pipefail
+          chmod +x scripts/build-release.sh
+          ./scripts/build-release.sh 0.0.0-ci-check
+          ZIP_FILE="dist/pm-skills-v0.0.0-ci-check.zip"
+          if [[ ! -f "$ZIP_FILE" ]]; then
+            echo "::error::Release ZIP was not created"
+            exit 1
+          fi
+          ZIP_SIZE=$(stat -c%s "$ZIP_FILE" 2>/dev/null || stat -f%z "$ZIP_FILE")
+          ZIP_MB=$((ZIP_SIZE / 1048576))
+          echo "ZIP size: ${ZIP_SIZE} bytes (${ZIP_MB} MB)"
+          if (( ZIP_SIZE > 52428800 )); then
+            echo "::error::Plugin ZIP exceeds Cowork 50MB upload limit (${ZIP_MB} MB)"
+            exit 1
+          fi
+          echo "Cowork ZIP size check passed (${ZIP_MB} MB < 50 MB)"
+          rm -rf dist/
+
+      - name: Lint plugin packaging policy
+        run: |
+          set -euo pipefail
+          grep -n "\.claude-plugin" scripts/build-release.sh scripts/build-release.ps1
+          grep -n "plugin.json" scripts/build-release.sh scripts/build-release.ps1
+
+      - name: Ensure tag and plugin version match
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: |
+          set -euo pipefail
+          TAG_VERSION="${GITHUB_REF_NAME#v}"
+          MANIFEST_VERSION="$(node -p "JSON.parse(require('fs').readFileSync('.claude-plugin/plugin.json', 'utf8')).version")"
+          if [[ "$TAG_VERSION" != "$MANIFEST_VERSION" ]]; then
+            echo "::error::Tag version ($TAG_VERSION) does not match .claude-plugin/plugin.json version ($MANIFEST_VERSION)"
+            exit 1
+          fi

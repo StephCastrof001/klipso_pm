@@ -1,0 +1,31 @@
+/* PM Skills custom Starlight styles. */
+/* W5 (Custom CSS port): minimal port from docs/stylesheets/extra.css. */
+/* Retired selectors: .md-grid, .md-button, .md-tags .md-tag, details.example. */
+/* See plan_v2.14_starlight-migration.md W5 section for inventory + dispositions. */
+
+/* Mermaid diagram width (paired with W6 mermaid integration). */
+.mermaid {
+  max-width: 100%;
+}
+
+/* Mermaid SVG polish (W13 M2). Pairs with M1 themeVariables in
+   astro.config.mjs (lineColor + fontFamily). These rules apply across
+   light + dark mode and across all diagram types (flowchart, sequence,
+   gantt, etc.). Conservative scope: stroke-width bump for readability,
+   subtle node corner-radius for less utilitarian look, cluster
+   fill-opacity for nested-graph visual layering. */
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+.mermaid .edgePath path,
+.mermaid .flowchart-link {
+  stroke-width: 1.75px;
+}
+.mermaid .node rect {
+  rx: 6;
+  ry: 6;
+}
+.mermaid .cluster rect {
+  fill-opacity: 0.4;
+}
