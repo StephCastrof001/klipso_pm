@@ -102,6 +102,25 @@ TOTAL: menos de 4 horas | FRICCIONES ELIMINADAS: todas las del as-is
 
 ---
 
+## Framework Propio — Confirmado y Nombrado
+
+> Estefany tiene un metodología real de transformación de canales. Verbalizarla con vocabulario PM es lo único que falta.
+
+```
+Tu framework propio              →  Cómo decirlo en entrevista
+──────────────────────────────────────────────────────────────
+"Ver la Data del Canal"         →  Baseline Analysis (volumen, tiempos, tasas)
+"Entrevistas a usuarios"        →  Discovery cualitativo / field research
+"Diagrama As-Is"                →  Customer Journey Map — estado actual
+"Identificar fricciones"        →  Pain point mapping con impacto cuantificado
+"Armar el To-Be digital"        →  Blueprint del canal objetivo
+```
+
+**Pitch en 15 segundos:**
+> "Mi punto de partida siempre es el baseline del canal: volumen, tiempos por paso, tasa de éxito. Con eso en la mano, hago 8-10 entrevistas para construir el journey completo. De ahí saco el As-Is con fricciones cuantificadas — y recién diseño el To-Be. No antes."
+
+---
+
 ## Patrones recurrentes a trabajar
 
 | Patrón | Frecuencia | Acción |

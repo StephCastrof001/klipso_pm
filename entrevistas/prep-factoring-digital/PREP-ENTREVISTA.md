@@ -1,6 +1,7 @@
 # Prep Entrevista — PM Factoring & Descuento Electrónico Digital
 > Rol: PM que construye canal digital desde cero para Factoring + Descuento Electrónico
 > Contexto: migración de canal tradicional (presencial/papel) a canal digital
+> Todas las respuestas modelo usan estructura STAR
 
 ---
 
@@ -29,253 +30,441 @@ El canal tradicional requiere: ir a la sucursal → llevar documentos físicos �
 
 ---
 
-## 2. PREGUNTAS TIPO ENTREVISTA — Con respuestas modelo
+## 2. PREGUNTAS TIPO ENTREVISTA — Con respuestas modelo en STAR
+
+> **Estructura STAR:**
+> - **S — Situation:** contexto específico (empresa, momento, escala)
+> - **T — Task:** qué tenías/tendrías que lograr
+> - **A — Action:** qué hiciste/harías tú específicamente (pasos concretos)
+> - **R — Result:** resultado medible (número, tiempo, %)
 
 ---
 
 ### BLOQUE A: Presentación y Fit
 
+---
+
 **Q1: Cuéntame sobre ti y por qué te interesa este rol.**
 
-Estructura recomendada (90 segundos):
+*(Comportamental — usa STAR con experiencia real)*
+
 ```
-1. Quién soy profesionalmente (15 seg)
-2. Qué he hecho relevante para este rol (30 seg)  
-3. Por qué este rol específico me interesa (30 seg)
-4. Qué aportaré en los primeros 90 días (15 seg)
+STAR APLICADO A Q1:
+
+S — "Llevo 10 años trabajando en productos digitales, con foco en los últimos 5 
+     en canales de atención. Mi contexto más reciente fue [empresa], un producto 
+     que atendía a [segmento] con un proceso 100% presencial."
+
+T — "Mi tarea fue reducir el costo por atención y aumentar la adopción digital 
+     sin perder la tasa de resolución que tenía el canal físico."
+
+A — "Lo que hice fue: primero mapeé el canal existente con data y entrevistas 
+     para entender dónde estaban las fricciones reales. Luego diseñé el canal 
+     digital en capas — empezando por las operaciones de mayor volumen — y lo 
+     validé con usuarios antes del primer sprint."
+
+R — "Logramos [X% de adopción digital / reducción de tiempo de X a Y / NPS 
+     de Z] en los primeros [N] meses."
 ```
 
-Respuesta modelo:
-> "Soy PM con enfoque en productos digitales financieros. He trabajado en [X], donde lideré la migración de [proceso] a canal digital, logrando [resultado medible]. Me interesa este rol porque el Descuento Electrónico en Perú está en un punto de inflexión: las facturas electrónicas SUNAT ya existen, la infraestructura está, pero la experiencia de usuario sigue siendo presencial. Quiero ser quien cierre esa brecha. En los primeros 90 días me enfocaría en hacer discovery profundo con las empresas que usan el canal hoy para entender dónde está la fricción real."
+**Cierre — siempre terminar con valor para la empresa, no necesidad propia:**
+> *"Me interesa este rol porque el Descuento Electrónico en Perú tiene la infraestructura lista — las facturas SUNAT ya son electrónicas — pero la experiencia sigue siendo presencial. Quiero aportar en este momento específico porque es exactamente el tipo de transición en la que he demostrado resultados."*
 
 ---
 
 **Q2: ¿Qué sabes de Factoring y Descuento Electrónico?**
 
-Respuesta modelo:
-> "Factoring es básicamente monetizar cuentas por cobrar antes de su vencimiento — la empresa obtiene liquidez inmediata cediendo el derecho de cobro al banco. Descuento Electrónico es la versión digital-native de eso, usando la factura electrónica de SUNAT como documento base. Lo que me parece interesante del contexto peruano es que ya tienen la infraestructura (SUNAT valida facturas electrónicas en tiempo real), entonces el problema no es técnico — es de experiencia de usuario y de confianza del cliente en el canal digital."
+*(Domain knowledge — adapta STAR con contexto de aprendizaje)*
+
+```
+S — "Cuando empecé a explorar este rol, investigué el estado del producto 
+     en el mercado peruano."
+
+T — "Necesitaba entender no solo el producto financiero, sino dónde está 
+     la oportunidad de digitalización."
+
+A — "Lo que encontré es que Factoring es básicamente monetizar cuentas por 
+     cobrar antes de su vencimiento — la empresa obtiene liquidez cediendo 
+     el derecho de cobro al banco. Descuento Electrónico es la versión 
+     digital-native, usando la factura electrónica SUNAT como base.
+
+     Lo clave del contexto peruano: SUNAT ya valida facturas en tiempo real. 
+     Entonces el cuello de botella no es el documento — es la evaluación 
+     crediticia manual y la experiencia de usuario en el canal."
+
+R — "Eso me dice que el problema es de producto y adopción, no técnico. 
+     La infraestructura ya existe. Falta el canal."
+```
 
 ---
 
 ### BLOQUE B: Discovery y Customer Journey
 
+---
+
 **Q3: ¿Cómo harías el discovery para este producto?**
 
-Respuesta modelo (usa JTBD + data):
-> "Empezaría por entender el job-to-be-done real. No es 'descontar una factura' — es 'tener liquidez hoy para pagar planilla/proveedor/inventario sin esperar 60 días'. Entonces el discovery tiene dos capas:
-> 
-> **Cualitativa:** 8-10 entrevistas con clientes actuales del canal presencial. Preguntas clave: ¿cuándo decidiste venir al banco? ¿qué tenías que resolver ese día? ¿qué fue lo más frustrante del proceso? ¿en qué momento dudarías de usar una app para esto?
->
-> **Cuantitativa:** Análisis del funnel actual — cuántos inician el proceso, cuántos lo completan, cuánto tiempo tarda cada paso, en qué paso se caen más. Con eso puedo priorizar dónde atacar primero.
->
-> También haría shadow sessions: sentarme en la sucursal y ver el proceso en vivo."
+*(Situacional — STAR como 'así lo haría')*
+
+```
+S — "Me enfrento a un canal que no conozco directamente: Factoring presencial, 
+     con clientes PyME que confían en el ejecutivo de sucursal."
+
+T — "Mi tarea es entender el canal actual antes de diseñar el digital. 
+     No puedo proponer un To-Be sin entender el As-Is."
+
+A — "Mi punto de partida siempre es la data del canal:
+     - ¿Cuántas operaciones mensuales? ¿Qué monto promedio?
+     - ¿Cuánto tarda cada paso? ¿En qué paso se cae la gente?
+     - ¿Cuál es la tasa de aprobación actual?
+     Con ese baseline en la mano, hago 8-10 entrevistas: 
+     clientes actuales, ejecutivos de sucursal, equipo de crédito.
+     La pregunta clave no es '¿usarías una app?' — es '¿cuándo necesitaste 
+     liquidez urgente y qué fue lo más frustrante del proceso?'
+     Luego mapeo el As-Is con fricciones cuantificadas (tiempo, costo, 
+     frecuencia de queja) y recién diseño el To-Be."
+
+R — "El resultado esperado: antes del primer sprint tengo 3 fricciones 
+     priorizadas por impacto y validadas con al menos 5 clientes."
+```
 
 ---
 
-**Q4: Mapea el customer journey de un cliente que hace Descuento Electrónico hoy (canal tradicional).**
+**Q4: Mapea el customer journey de un cliente que hace Descuento Electrónico hoy.**
+
+*(Técnico — STAR como estructura de presentación)*
 
 ```
-CANAL TRADICIONAL HOY:
+S — "El canal actual es 100% presencial. El cliente es una PyME que necesita 
+     liquidez antes del vencimiento de sus facturas."
 
-1. TRIGGER        → Empresa necesita liquidez urgente
-2. DECISIÓN       → Decide ir al banco (¿por qué no otra opción?)
-3. PREPARACIÓN    → Reúne documentos: facturas, RUC, estados financieros
-4. DESPLAZAMIENTO → Va a la sucursal (costo: tiempo, transporte)
-5. ESPERA         → Cola en sucursal (20-45 min promedio)
-6. ATENCIÓN       → Ejecutivo revisa documentos manualmente
-7. EVALUACIÓN     → Área de crédito evalúa (horas o días)
-8. APROBACIÓN     → Notificación (puede ser al día siguiente)
-9. FIRMA          → Regresa para firmar contrato físico
-10. DESEMBOLSO    → 24-72 horas después
+T — "Mi trabajo es documentar cada paso, con tiempos y fricciones, para 
+     identificar dónde atacar primero."
 
-FRICCIONES IDENTIFICADAS:
-- Paso 3: no saben exactamente qué documentos traer
-- Paso 4-5: desplazamiento + espera = costo real para PyME
-- Paso 6-7: caja negra — no saben en qué estado está su solicitud
-- Paso 9: tienen que regresar solo para firmar
-- Paso 10: incertidumbre sobre cuándo llega el dinero
-```
+A — "El As-Is tiene 6 pasos con fricciones concretas:
 
-**Canal digital que propondrías:**
-```
-1. TRIGGER        → Misma necesidad urgente de liquidez
-2. ACCESO         → App / web → login con credenciales bancarias
-3. SELECCIÓN      → Selecciona facturas electrónicas (sync con SUNAT)
-4. SIMULACIÓN     → Ve exactamente: monto a recibir, comisión, fecha desembolso
-5. CONFIRMACIÓN   → Firma digital (huella/OTP)
-6. VALIDACIÓN     → Sistema valida contra SUNAT + score crediticio automático
-7. APROBACIÓN     → Notificación push en minutos (no horas)
-8. DESEMBOLSO     → En cuenta en 2-4 horas
+     Paso 1: Cliente detecta necesidad de liquidez → reúne documentos (1-2 días)
+             FRICCIÓN: no sabe exactamente qué traer
+     Paso 2: Va a sucursal → hace cola (45-60 min)
+             FRICCIÓN: desplazamiento + espera = costo real para la PyME
+     Paso 3: Ejecutivo revisa documentos manualmente (30 min)
+             FRICCIÓN: proceso manual, depende de la persona
+     Paso 4: Evaluación crediticia (24-48h — caja negra)
+             FRICCIÓN: cliente no sabe qué pasa con su solicitud
+     Paso 5: Cliente vuelve a firmar físico (segundo desplazamiento)
+             FRICCIÓN: viaje solo para una firma
+     Paso 6: Desembolso a cuenta (24-72h)
+             FRICCIÓN: incertidumbre sobre cuándo llega el dinero
+     TOTAL: 3-5 días
 
-MEJORAS KPI:
-- Tiempo total: 72h → 4h
-- Fricciones eliminadas: desplazamiento, espera, caja negra, doble visita
+     El To-Be elimina todas esas fricciones:
+
+     Paso 1: Login app/portal
+     Paso 2: Sync automático con SUNAT → facturas cargadas sin subir nada
+     Paso 3: Selecciona facturas → ve monto neto y comisión en tiempo real
+     Paso 4: Score crediticio automático (minutos, no horas)
+     Paso 5: Firma digital con OTP
+     Paso 6: Desembolso a cuenta existente del cliente (2-4 horas)
+     TOTAL: menos de 4 horas"
+
+R — "Resultado esperado: tiempo de 3-5 días a menos de 4 horas. 
+     Fricciones eliminadas: desplazamiento x2, caja negra, proceso manual, 
+     incertidumbre de desembolso."
 ```
 
 ---
 
 **Q5: ¿Qué KPIs definirías para medir el éxito del canal digital?**
 
-Respuesta modelo:
+*(Situacional — STAR como marco de decisión)*
+
 ```
-NORTH STAR METRIC: 
-% de operaciones de descuento procesadas en canal digital 
-(meta año 1: 30%, año 2: 60%)
+S — "Estamos lanzando un canal digital para un producto que hoy es 100% 
+     presencial. No hay línea de base digital — hay que construirla."
 
-ACQUISITION:
-- Nuevas empresas activadas en canal digital / mes
-- % de clientes actuales que migran al canal digital
-- Tasa de abandono en onboarding digital
+T — "Necesito definir métricas que midan adopción, calidad del proceso 
+     y satisfacción del cliente — sin perder de vista el negocio."
 
-ACTIVATION:
-- % de registrados que completan primera operación
-- Tiempo promedio primera operación (target: <15 min)
-- Drop-off por paso del funnel
+A — "Estructuro los KPIs en dos niveles:
 
-RETENTION:
-- % de clientes que repiten operación en 30 días
-- Frecuencia promedio de uso / mes
+     NORTH STAR METRIC (el número que define el éxito del producto):
+     → % de operaciones procesadas en canal digital
+       (meta año 1: 30% | año 2: 60%)
 
-OPERATIONAL:
-- Tiempo promedio de aprobación (target: <30 min)
-- Tasa de aprobación digital vs presencial
-- Tasa de errores en solicitudes digitales
+     MÉTRICAS AARM por etapa:
+     
+     ACQUISITION:
+     - Nuevas empresas activadas en canal digital / mes
+     - % de clientes actuales que migran al canal digital
+     - Tasa de abandono en onboarding digital
+     
+     ACTIVATION:
+     - % de registrados que completan primera operación
+     - Tiempo promedio primera operación (target: <15 min)
+     - Drop-off por paso del funnel
+     
+     RETENTION:
+     - % de clientes que repiten en 30 días
+     - Frecuencia promedio de operaciones / mes
+     
+     MONETIZACIÓN / OPERACIONAL:
+     - Tiempo promedio de aprobación digital (target: <30 min)
+     - Tasa de aprobación digital vs presencial
+     - Costo por operación digital vs presencial"
 
-SATISFACTION:
-- NPS post-operación (target: >50)
-- CSAT en momentos clave (primer desembolso)
+R — "Con estos KPIs puedo responder las dos preguntas del negocio: 
+     ¿está creciendo el canal digital? y ¿está funcionando bien?"
 ```
 
 ---
 
 ### BLOQUE C: Backlog y Priorización
 
+---
+
 **Q6: ¿Cómo priorizas el backlog de un producto financiero regulado?**
 
-Respuesta modelo:
-> "Uso una matriz de tres dimensiones: valor al cliente, valor al negocio, y factibilidad regulatoria/técnica. En productos financieros el tercer eje es crítico — puedes tener algo muy valioso para el cliente que compliance bloquea por 6 meses. Entonces priorizo:
->
-> **Tier 1:** Alta valor + regulatoriamente claro + técnicamente factible → sprint inmediato
-> **Tier 2:** Alta valor + requiere validación regulatoria → paralelo con equipo legal
-> **Tier 3:** Nice-to-have sin dependencies complejas → backlog, no sprint
->
-> Para Factoring específicamente, la primera versión sería solo las 2 funciones que cubren el 80% del volumen: subir factura y ver estado de la solicitud. Todo lo demás es V2."
+*(Comportamental — usa STAR con experiencia real o caso concreto)*
+
+```
+S — "En productos financieros hay un eje adicional que no existe en otros 
+     productos: la factibilidad regulatoria. Algo puede ser muy valioso 
+     para el cliente y estar bloqueado 6 meses por compliance."
+
+T — "Mi tarea es priorizar sin ignorar ese eje."
+
+A — "Uso una matriz de tres dimensiones:
+     1. Valor al cliente (impacto en journey y frecuencia de uso)
+     2. Valor al negocio (volumen de operaciones, margen, adopción)
+     3. Factibilidad (regulatoria + técnica + tiempo de entrega)
+
+     Tier 1: alto valor + regulatoriamente claro + factible → sprint inmediato
+     Tier 2: alto valor + requiere validación regulatoria → corro en paralelo 
+             con legal mientras el equipo trabaja en Tier 1
+     Tier 3: nice-to-have sin dependencies críticas → backlog, no sprint
+
+     Para el MVP de Factoring específicamente: solo dos funciones cubren 
+     el 80% del caso de uso — subir factura y ver estado de la solicitud. 
+     Todo lo demás es V2."
+
+R — "El resultado de esta priorización es un roadmap que el negocio entiende, 
+     legal puede anticipar, y tecnología puede ejecutar sin bloqueos constantes."
+```
 
 ---
 
-**Q7: Traduce este requerimiento de negocio a historias de usuario:**
-*"El área comercial quiere que los clientes puedan hacer descuento de múltiples facturas en una sola operación."*
+**Q7: Traduce este requerimiento a historias de usuario:**
+*"El área comercial quiere que los clientes puedan descontar múltiples facturas en una sola operación."*
 
-Respuesta modelo:
+*(Técnico — STAR como proceso de traducción)*
+
 ```
-EPIC: Operación de descuento batch
+S — "El requerimiento viene del área comercial en lenguaje de negocio, 
+     no en lenguaje de usuario."
 
-Historia 1 (MVP):
-Como empresa con múltiples facturas pendientes,
-Quiero seleccionar varias facturas en una sola sesión,
-Para no tener que iniciar el proceso una vez por cada factura.
-Criterios de aceptación:
-- Puedo seleccionar hasta 10 facturas por operación
-- El sistema muestra el monto total neto antes de confirmar
-- Una sola firma digital cubre todas las facturas seleccionadas
-- Recibo un comprobante consolidado
+T — "Necesito convertirlo en historias que el equipo pueda ejecutar, 
+     con criterios de aceptación verificables."
 
-Historia 2 (V2 — si los datos lo justifican):
-Como empresa recurrente,
-Quiero configurar reglas automáticas (ej: "descontar todas las facturas >S/10k"),
-Para no tener que iniciar sesión cada vez.
-(Esta solo se construye si el dato de uso muestra que el 30%+ de clientes repiten la misma selección manual)
+A — "Primero valido si el problema existe: ¿cuántos clientes hoy hacen 
+     múltiples operaciones separadas? Si el dato lo confirma, escribo:
+
+     HISTORIA MVP:
+     Como empresa con múltiples facturas pendientes,
+     Quiero seleccionar varias en una sola sesión,
+     Para no iniciar el proceso una vez por cada factura.
+     
+     Criterios de aceptación:
+     - Selecciono hasta 10 facturas por operación
+     - Veo el monto total neto antes de confirmar
+     - Una firma digital cubre todas las facturas seleccionadas
+     - Recibo un comprobante consolidado
+
+     HISTORIA V2 (solo si el dato lo justifica):
+     Como empresa recurrente,
+     Quiero configurar reglas automáticas de descuento,
+     Para no iniciar sesión cada vez.
+     → Esta historia entra al roadmap SOLO si el 30%+ de clientes 
+       repiten la misma selección manual."
+
+R — "El equipo puede estimar, implementar y verificar. 
+     El negocio puede ver exactamente qué se construye y cuándo."
 ```
 
 ---
 
 **Q8: ¿Cómo manejas conflictos entre tecnología y negocio?**
 
-Respuesta modelo:
-> "Mi rol es ser traductor, no árbitro. Cuando tecnología dice 'eso no se puede en el sprint' y negocio dice 'eso tiene que estar para el lanzamiento', mi trabajo es entender el porqué de ambos lados y buscar el MVP que satisfaga el constraint real.
->
-> Ejemplo concreto: si compliance quiere firma manuscrita escaneada para la primera versión y tecnología quiere implementar firma digital (3 meses de desarrollo), propongo un workaround: firma digital básica con OTP para V1, firma avanzada certificada para V2 cuando tengamos el volumen que justifique la inversión. Datos y criterios de decisión sobre la mesa — no opiniones."
+*(Comportamental — usa STAR con ejemplo concreto)*
+
+```
+S — "En el lanzamiento de [producto/feature], compliance exigía firma 
+     manuscrita escaneada. Tecnología había diseñado firma digital OTP. 
+     Ambos equipos tenían razón dentro de su dominio."
+
+T — "Mi trabajo era desbloquearlo sin sacrificar ni el cumplimiento 
+     regulatorio ni el tiempo de lanzamiento."
+
+A — "Lo que hice fue: entender el porqué real de cada posición.
+     Compliance no quería firma manuscrita per se — quería trazabilidad 
+     y no-repudio del contrato. Tecnología podía entregar eso con OTP en V1 
+     y firma avanzada certificada en V2.
+     Propuse ese camino con criterios de decisión sobre la mesa: 
+     OTP cumple el requisito de trazabilidad en el rango de montos del MVP. 
+     Firma avanzada se agrega cuando el volumen justifique la inversión.
+     Ambos equipos lo aceptaron porque la decisión se basó en datos, 
+     no en jerarquía."
+
+R — "Lanzamos en fecha con firma OTP. 
+     V2 con firma avanzada se planificó para el trimestre siguiente."
+```
 
 ---
 
 ### BLOQUE D: Ceremonias Ágiles
 
+---
+
 **Q9: ¿Cómo describes tu rol en cada ceremonia del squad?**
 
+*(Situacional — STAR adaptado como 'así es mi estilo')*
+
 ```
-DAILY (15 min):
-Mi rol: escuchar blockers, no reportar status. 
-Si un developer está bloqueado por una definición de negocio → la resuelvo ese día, no mañana.
+S — "Trabajo con squads donde el PM puede convertirse en el cuello 
+     de botella si no está disponible en el momento correcto."
 
-PLANNING (2-4h):
-Mi rol: asegurar que todas las historias tienen criterios de aceptación claros ANTES de entrar al sprint. 
-Si una historia llega al planning sin AC → la saco del sprint.
+T — "Mi trabajo en cada ceremonia es específico y distinto."
 
-REFINAMIENTO (1-2h):
-Mi rol: el más importante para mí. Aquí aclaro dudas, divido historias grandes, y 
-aseguro que el equipo entienda el PORQUÉ de cada feature, no solo el QUÉ.
+A — "Así lo aplico:
 
-REVIEW (1h):
-Mi rol: representar la voz del cliente/negocio. 
-Hago preguntas desde el usuario: "¿el cliente entendería este flujo sin explicación?"
+     DAILY (15 min):
+     Mi rol: escuchar blockers, no reportar status.
+     Si un developer está bloqueado por una definición → la resuelvo ese día.
 
-RETROSPECTIVA:
-Mi rol: participar como un miembro más del equipo, no como "el jefe". 
-El equipo habla de proceso, yo hablo de proceso también.
+     PLANNING (2-4h):
+     Mi rol: asegurarme de que CADA historia tenga criterios de aceptación 
+     claros ANTES de entrar al sprint. Si una historia no tiene AC → la saco.
+
+     REFINAMIENTO (1-2h):
+     Mi rol más importante. Aquí aclaro el PORQUÉ de cada feature, no solo 
+     el QUÉ. El equipo que entiende el porqué toma mejores micro-decisiones.
+
+     REVIEW (1h):
+     Mi rol: representar la voz del cliente. 
+     Pregunta que hago siempre: '¿el cliente entendería esto sin explicación?'
+
+     RETROSPECTIVA:
+     Mi rol: participar como miembro del equipo, no como jefe. 
+     Hablo de proceso, no de personas."
+
+R — "El resultado es un squad que no está esperando respuestas del PM 
+     para avanzar, porque las preguntas se resolvieron antes del sprint."
 ```
 
 ---
 
 ### BLOQUE E: Preguntas difíciles
 
+---
+
 **Q10: ¿Cómo medirías si el canal digital está siendo exitoso vs el presencial?**
 
-Respuesta modelo:
-> "No es solo volumen — es calidad del volumen. Compararía por cohorte de clientes:
-> - **Ticket promedio:** ¿los clientes digitales descontan facturas de mayor o menor monto?
-> - **Frecuencia:** ¿vuelven más seguido que los del canal presencial?
-> - **Default rate:** ¿el canal digital tiene más o menos defaults? (indica si el modelo de aprobación digital es sólido)
-> - **NPS por canal:** ¿el cliente digital está más o menos satisfecho?
-> - **Costo por operación:** ¿cuánto cuesta procesar una operación digital vs presencial?
->
-> Si el canal digital tiene mejor frecuencia, mismo o menor default, y NPS más alto — es un éxito aunque el ticket sea menor al inicio."
+*(Analítico — STAR como metodología de análisis)*
+
+```
+S — "Tenemos dos canales corriendo en paralelo: presencial y digital. 
+     El negocio quiere saber si el canal digital está funcionando."
+
+T — "No basta con mirar volumen — necesito medir calidad del volumen."
+
+A — "Comparo por cohorte de clientes, no por canal en abstracto:
+     - Ticket promedio: ¿los clientes digitales descuentan facturas 
+       de mayor o menor monto?
+     - Frecuencia: ¿vuelven más seguido que los del canal presencial?
+     - Default rate: ¿el canal digital tiene más o menos defaults?
+       (esto indica si el modelo de aprobación digital es sólido)
+     - NPS por canal: ¿el cliente digital está más o menos satisfecho?
+     - Costo por operación: ¿cuánto cuesta procesar digital vs presencial?"
+
+R — "Si el canal digital tiene mejor frecuencia, mismo o menor default, 
+     y NPS más alto — es un éxito aunque el ticket sea menor al inicio. 
+     Eso me dice que estamos captando un segmento nuevo, no canibalizando 
+     el canal existente."
+```
 
 ---
 
 **Q11: ¿Qué harías en los primeros 30-60-90 días?**
 
+*(Situacional — STAR como plan de acción)*
+
 ```
-DÍA 1-30: ESCUCHAR
-- 10 entrevistas con clientes actuales del canal presencial
-- Shadow en sucursal: ver el proceso en vivo
-- Reuniones 1:1 con cada área (tecnología, crédito, compliance, comercial)
-- Leer todos los tickets/incidencias del sistema actual
-- Entender el roadmap existente y los compromisos ya tomados
+S — "Llego a un producto que existe en canal presencial pero no tiene 
+     canal digital. Hay una organización con equipos formados, compromisos 
+     ya tomados, y una cultura que no conozco."
 
-DÍA 31-60: DIAGNOSTICAR
-- Mapear el journey actual completo con métricas reales
-- Identificar los 3 dolores más grandes (por frecuencia e impacto)
-- Hacer sizing del problema: cuánto volumen, cuánto cuesta hoy
-- Proponer el MVP: qué funciones cubren el 80% del caso de uso
-- Validar el MVP con 5 clientes antes de escribir una sola historia
+T — "En 90 días necesito entender el problema real, alinear a los 
+     stakeholders, y lanzar algo que demuestre tracción."
 
-DÍA 61-90: CONSTRUIR Y MEDIR
-- Primer sprint con el equipo
-- Definir los KPIs base (línea de partida)
-- Lanzar piloto con 10-20 clientes seleccionados
-- Primera review con stakeholders: datos, no promesas
+A — "Lo estructuro en tres fases:
+
+     DÍA 1-30: ESCUCHAR
+     - 10 entrevistas con clientes actuales del canal presencial
+     - Shadow en sucursal: ver el proceso en vivo
+     - Reuniones 1:1 con cada área (tech, crédito, compliance, comercial)
+     - Leer todos los tickets/incidencias del sistema actual
+     - Entender el roadmap existente y los compromisos ya tomados
+
+     DÍA 31-60: DIAGNOSTICAR
+     - Mapear el journey actual completo con métricas reales
+     - Identificar las 3 fricciones de mayor impacto (por frecuencia y costo)
+     - Hacer sizing: cuánto volumen, cuánto cuesta hoy, cuánto puede mejorar
+     - Proponer el MVP: qué funciones cubren el 80% del caso de uso
+     - Validar el MVP con 5 clientes antes de escribir una sola historia
+
+     DÍA 61-90: CONSTRUIR Y MEDIR
+     - Primer sprint con el equipo
+     - Definir la línea de base de los KPIs
+     - Lanzar piloto con 10-20 clientes seleccionados
+     - Primera review con stakeholders: datos, no promesas"
+
+R — "Al día 90 tengo: un canal digital en manos de clientes reales, 
+     métricas base establecidas, y la primera señal de si el approach 
+     es correcto o necesita ajuste."
 ```
 
 ---
 
 **Q12: ¿Cómo manejas la resistencia de clientes a migrar al canal digital?**
 
-Respuesta modelo:
-> "La resistencia al canal digital en productos financieros tiene dos causas: desconfianza y fricción. Las trato distinto.
->
-> Para la **desconfianza**: no intento convencer — demuestro. Piloto con clientes que ya tienen relación de confianza con el banco, muestro los resultados en números (tiempo, costo, seguridad), y dejo que ellos sean los referentes para otros clientes.
->
-> Para la **fricción**: la elimino. Si alguien prefiere ir a la sucursal porque el proceso digital es complicado, el problema es mío, no del cliente. El digital tiene que ser más fácil, no solo más rápido."
+*(Comportamental — usa STAR con experiencia real o caso concreto)*
+
+```
+S — "En [producto anterior], teníamos clientes que llevaban años 
+     usando el canal presencial. Para ellos el ejecutivo era la garantía 
+     de que el proceso funcionaría."
+
+T — "Tenía que migrar ese segmento sin perder la confianza que habían 
+     construido con el canal físico."
+
+A — "Identifiqué dos causas distintas de resistencia y las traté diferente:
+
+     Para la DESCONFIANZA:
+     No intenté convencer — demostré. Arranqué con los clientes que ya 
+     tenían la mejor relación con el banco, los usé como referentes, 
+     y mostré los resultados en números: tiempo, costo, seguridad.
+     Cuando un cliente satisfecho le dice a otro 'funcionó', pesa más 
+     que cualquier campaña de marketing.
+
+     Para la FRICCIÓN:
+     Si alguien prefería ir a la sucursal porque el proceso digital era 
+     complicado, el problema era mío, no del cliente. Cada abandono en 
+     el flujo digital era una oportunidad de simplificar. 
+     El digital tiene que ser más fácil, no solo más rápido."
+
+R — "Resultado: [X% de los clientes piloto completaron al menos una 
+     operación digital en los primeros 30 días / NPS del canal digital 
+     superó al presencial en N puntos]."
+```
 
 ---
 
@@ -284,22 +473,22 @@ Respuesta modelo:
 Estas preguntas demuestran que piensas como PM senior:
 
 ```
-1. "¿Cuál es el mayor bloqueador hoy para que este producto esté en digital? 
+1. "¿Cuál es el mayor bloqueador hoy para que este producto esté en digital?
     ¿Es técnico, regulatorio, o de adopción del cliente?"
 
-2. "¿Tienen data del funnel actual del canal presencial? 
+2. "¿Tienen data del funnel actual del canal presencial?
     ¿Saben en qué paso se cae la gente?"
 
 3. "¿El squad de desarrollo ya existe o se forma para este producto?"
 
-4. "¿Cuál es la métrica que el negocio usa hoy para medir el éxito del producto 
-    de Factoring? ¿Volumen, margen, NPS?"
+4. "¿Cuál es la métrica que el negocio usa hoy para medir el éxito del 
+    producto de Factoring? ¿Volumen, margen, NPS?"
 
 5. "¿Qué tan rígidos son los tiempos de compliance para aprobar nuevas 
     funcionalidades digitales? ¿Han hecho esto antes con otros productos?"
 
-6. "¿Cuál sería el primer hito que me diría que estoy teniendo éxito en los 
-    primeros 6 meses?"
+6. "¿Cuál sería el primer hito que me diría que estoy teniendo éxito 
+    en los primeros 6 meses?"
 ```
 
 ---
@@ -319,6 +508,14 @@ Estas preguntas demuestran que piensas como PM senior:
 ---
 
 ## 5. FRAMEWORKS PARA TENER EN LA PUNTA DE LA LENGUA
+
+### STAR (base de todas las respuestas)
+```
+S - Situation  → Contexto específico (empresa, momento)
+T - Task       → Qué tenías/tendrías que lograr
+A - Action     → Qué hiciste/harías tú específicamente (pasos concretos)
+R - Result     → Resultado medible (número, tiempo, %)
+```
 
 ### CIRCLES (para diseñar productos en la entrevista)
 ```
@@ -342,12 +539,18 @@ Effort     / semanas de desarrollo
 Feature con mayor score → primer sprint
 ```
 
-### STAR (para respuestas comportamentales)
+### Tu framework propio de canales (verbalizar así)
 ```
-S - Situation  → Contexto específico (empresa, momento)
-T - Task       → Qué tenías que lograr
-A - Action     → Qué hiciste tú específicamente
-R - Result     → Resultado medible (número, %)
+"Mi punto de partida siempre es la data del canal: volumen, tiempos 
+por paso, tasa de éxito. Con eso en la mano, hago 8-10 entrevistas 
+para construir el journey completo. De ahí saco el As-Is con fricciones 
+cuantificadas — y recién diseño el To-Be. No antes."
+
+Paso 1: Baseline Analysis     → data del canal actual
+Paso 2: Discovery cualitativo → 8-10 entrevistas usuarios + ejecutivos
+Paso 3: As-Is mapeado         → journey con tiempos y fricciones
+Paso 4: Pain point mapping    → fricciones priorizadas por impacto
+Paso 5: To-Be digital         → blueprint del canal objetivo
 ```
 
 ---
@@ -355,12 +558,13 @@ R - Result     → Resultado medible (número, %)
 ## 6. CHECKLIST PRE-ENTREVISTA
 
 ```
-□ Practica Q1-Q12 en voz alta (no en tu cabeza)
-□ Prepara 3 historias STAR con números reales
-□ Investiga la empresa específica: ¿tienen app? ¿cómo está su Factoring hoy?
+□ Practica Q1-Q12 en voz alta usando estructura STAR
+□ Prepara 3 historias STAR con números reales de tu experiencia
+□ Investiga la empresa: ¿tienen app? ¿cómo está su Factoring hoy?
 □ Lee sobre factura electrónica SUNAT (sistema OSE/PSE)
-□ Estudia el journey de un competitor (BCP, BBVA, Interbank — ¿cómo lo hacen?)
+□ Estudia el journey de un competitor (BCP, BBVA, Interbank)
 □ Prepara tus 6 preguntas para el hiring manager
 □ Ten tu NSM preparado: "el éxito de este producto se mide con X porque..."
-□ Practica el customer journey en papel (dibujar el antes/después)
+□ Practica "fricciones" en voz alta — no "flexiones"
+□ Ensaya el cierre de Q1: termina con valor para la empresa, no para ti
 ```
