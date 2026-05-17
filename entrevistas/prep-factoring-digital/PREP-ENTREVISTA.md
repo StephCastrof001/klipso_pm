@@ -46,29 +46,62 @@ El canal tradicional requiere: ir a la sucursal → llevar documentos físicos �
 
 **Q1: Cuéntame sobre ti y por qué te interesa este rol.**
 
-*(Comportamental — usa STAR con experiencia real)*
+*(Comportamental — historia real de Ágora, dos versiones según contexto)*
 
+---
+**VERSIÓN A — Si el rol es 0-to-1 (construir desde cero):**
 ```
-STAR APLICADO A Q1:
+S — "Soy PM con 10 años de experiencia en productos digitales.
+     En Ágora fui parte del equipo fundador: construimos el canal 
+     digital desde cero, sin canal tradicional previo, sin data 
+     histórica, sin flujos que adaptar. Nadie en la empresa había 
+     hecho esto antes."
 
-S — "Llevo 10 años trabajando en productos digitales, con foco en los últimos 5 
-     en canales de atención. Mi contexto más reciente fue [empresa], un producto 
-     que atendía a [segmento] con un proceso 100% presencial."
+T — "Mi tarea era diseñar el canal completo — entender al usuario 
+     sin ningún baseline y validar los flujos antes de construir."
 
-T — "Mi tarea fue reducir el costo por atención y aumentar la adopción digital 
-     sin perder la tasa de resolución que tenía el canal físico."
+A — "Sin data histórica, mi primer instrumento fue el discovery 
+     cualitativo: entrevistas a usuarios para entender sus retos reales.
+     Con eso construí el As-Is y el To-Be desde cero, sin asumir nada.
+     Luego conduje mesas de validación con el equipo para asegurar 
+     que lo que íbamos a construir resolvía el problema correcto 
+     antes del primer sprint."
 
-A — "Lo que hice fue: primero mapeé el canal existente con data y entrevistas 
-     para entender dónde estaban las fricciones reales. Luego diseñé el canal 
-     digital en capas — empezando por las operaciones de mayor volumen — y lo 
-     validé con usuarios antes del primer sprint."
-
-R — "Logramos [X% de adopción digital / reducción de tiempo de X a Y / NPS 
-     de Z] en los primeros [N] meses."
+R — "El canal se lanzó en 3 meses. Arrancamos en Trujillo, 
+     luego Lima, luego Piura. En los primeros 6 meses generamos 
+     más de S/3 millones en ventas."
 ```
+**Cierre:**
+> *"Me interesa este rol porque es exactamente ese tipo de reto: construir desde cero, sin canal tradicional que sirva de guía. Las facturas SUNAT ya están digitalizadas — la infraestructura existe. Lo que falta es el canal y el PM que lo construya. Es el escenario donde he demostrado resultados."*
 
-**Cierre — siempre terminar con valor para la empresa, no necesidad propia:**
-> *"Me interesa este rol porque el Descuento Electrónico en Perú tiene la infraestructura lista — las facturas SUNAT ya son electrónicas — pero la experiencia sigue siendo presencial. Quiero aportar en este momento específico porque es exactamente el tipo de transición en la que he demostrado resultados."*
+---
+**VERSIÓN B — Si el rol es migración de canal tradicional a digital:**
+```
+S — "Soy PM con 10 años de experiencia. En Ágora lideré el pivote 
+     de un producto retail a un producto financiero dentro del 
+     ecosistema de Intercortel. Ya teníamos procesos digitales 
+     armados — customer journeys, estrategia por segmentos — 
+     pero todo debía rehacerse para el nuevo dominio financiero."
+
+T — "Mi tarea fue liderar el rediseño completo del canal: 
+     entender el ecosistema financiero nuevo y construir los 
+     flujos que lo soportaran desde la data hasta el piloto."
+
+A — "Lo estructuré en cuatro pasos:
+     Primero, analicé la data del canal actual para establecer el baseline.
+     Segundo, hice entrevistas a usuarios y stakeholders para mapear 
+     el journey con fricciones cuantificadas.
+     Tercero, construí el As-Is y el To-Be.
+     Cuarto, conduje mesas ágiles para validar con stakeholders 
+     y empujar los pilotos."
+
+R — "Creamos más de 10 productos financieros nuevos.
+     Ágora se posicionó como player relevante en Intercortel.
+     Superamos el objetivo de canal: más de S/60 millones en 
+     ingresos con gastos acotados."
+```
+**Cierre:**
+> *"Me interesa este rol porque el Descuento Electrónico en Perú está en el mismo punto de inflexión que Ágora cuando entré: la infraestructura técnica ya existe — SUNAT ya digitaliza las facturas — pero la experiencia del cliente sigue siendo presencial. Quiero aportar en este momento específico porque es exactamente el tipo de transición en la que he demostrado resultados."*
 
 ---
 
@@ -93,7 +126,12 @@ A — "Lo que encontré es que Factoring es básicamente monetizar cuentas por
      crediticia manual y la experiencia de usuario en el canal."
 
 R — "Eso me dice que el problema es de producto y adopción, no técnico. 
-     La infraestructura ya existe. Falta el canal."
+     La infraestructura ya existe. Falta el canal.
+     Y lo confirma mi experiencia en Ágora: cuando construimos el canal 
+     financiero dentro del ecosistema de Intercortel, el mayor reto no fue 
+     la integración técnica — fue diseñar la experiencia para que los clientes 
+     confiaran en el canal sin el ejecutivo presencial de por medio. 
+     Cuando resolvimos eso, llegamos a S/60 millones en ingresos."
 ```
 
 ---
@@ -124,8 +162,11 @@ A — "Mi punto de partida siempre es la data del canal:
      Luego mapeo el As-Is con fricciones cuantificadas (tiempo, costo, 
      frecuencia de queja) y recién diseño el To-Be."
 
-R — "El resultado esperado: antes del primer sprint tengo 3 fricciones 
-     priorizadas por impacto y validadas con al menos 5 clientes."
+R — "En Ágora, este proceso — baseline + 8 entrevistas + As-Is con fricciones 
+     cuantificadas — nos tomó 3 semanas y nos ahorró 2 sprints de desarrollo 
+     al evitar construir features que los clientes no iban a usar.
+     Para el canal de Factoring: antes del primer sprint, 3 fricciones 
+     priorizadas por impacto cuantificado y validadas con 5 clientes."
 ```
 
 ---
@@ -167,9 +208,14 @@ A — "El As-Is tiene 6 pasos con fricciones concretas:
      Paso 6: Desembolso a cuenta existente del cliente (2-4 horas)
      TOTAL: menos de 4 horas"
 
-R — "Resultado esperado: tiempo de 3-5 días a menos de 4 horas. 
+R — "Reducción de 3-5 días a menos de 4 horas.
      Fricciones eliminadas: desplazamiento x2, caja negra, proceso manual, 
-     incertidumbre de desembolso."
+     incertidumbre de desembolso.
+     El argumento que convence a los stakeholders no es el diseño — 
+     es el cálculo: una PyME que descuenta 10 facturas al mes pierde 
+     30-50 días productivos solo en idas a sucursal. Eso es capital de trabajo.
+     En Ágora, este análisis fue lo que movió al negocio a invertir 
+     en el canal digital — y ese canal llegó a S/60 millones en ingresos."
 ```
 
 ---
@@ -260,9 +306,13 @@ A — "Tres pasos:
      Qué sale en 6 semanas. Qué va a V2. Qué puede hacerse 
      manualmente mientras tanto. Cada área ve el trade-off completo."
 
-R — "Lanzamos con el scope mínimo viable en fecha.
-     El negocio cumplió su objetivo. Tecnología entregó sin deuda técnica.
-     La parte manual se automatizó en el siguiente ciclo."
+R — "En Ágora hicimos exactamente esto en el lanzamiento del canal 
+     en Trujillo — primer piloto del canal digital.
+     Lanzamos con funciones mínimas: subir factura + ver estado de solicitud.
+     Sin firma digital avanzada, sin operaciones múltiples, sin historial.
+     3 meses para lanzar. S/3 millones en ventas en 6 meses.
+     Lo que dejamos para V2 nunca fue bloqueante para los primeros clientes.
+     La automatización llegó en el ciclo siguiente, cuando el piloto la justificó."
 ```
 
 ---
@@ -328,13 +378,16 @@ A — "Uso una matriz de tres dimensiones:
      el 80% del caso de uso — subir factura y ver estado de la solicitud. 
      Todo lo demás es V2."
 
-R — "El resultado de esta priorización es un roadmap que el negocio entiende, 
-     legal puede anticipar, y tecnología puede ejecutar sin bloqueos constantes."
+R — "En Ágora, esta metodología nos permitió lanzar más de 10 productos 
+     financieros nuevos dentro del ecosistema de Intercortel sin que 
+     un bloqueador de compliance detuviera ningún sprint.
+     El roadmap era legible para negocio, anticipable para legal, 
+     y ejecutable para tecnología — los tres a la vez."
 ```
 
 ---
 
-**Q7: Traduce este requerimiento a historias de usuario:**
+**Q9: Traduce este requerimiento a historias de usuario:**
 *"El área comercial quiere que los clientes puedan descontar múltiples facturas en una sola operación."*
 
 *(Técnico — STAR como proceso de traducción)*
@@ -367,20 +420,27 @@ A — "Primero valido si el problema existe: ¿cuántos clientes hoy hacen
      → Esta historia entra al roadmap SOLO si el 30%+ de clientes 
        repiten la misma selección manual."
 
-R — "El equipo puede estimar, implementar y verificar. 
-     El negocio puede ver exactamente qué se construye y cuándo."
+R — "En Ágora, este proceso nos evitó el re-trabajo más costoso: 
+     construir algo que el equipo técnico entendía diferente al negocio.
+     Con criterios de aceptación explícitos desde el refinamiento, 
+     los sprints no se usaban para clarificar — se usaban para entregar.
+     El equipo puede estimar, implementar y verificar.
+     El negocio sabe exactamente qué se construye y cuándo.
+     Y si la data no justifica la V2 automática, la historia no entra al backlog."
 ```
 
 ---
 
-**Q8: ¿Cómo manejas conflictos entre tecnología y negocio?**
+**Q10: ¿Cómo manejas conflictos entre tecnología y negocio?**
 
 *(Comportamental — usa STAR con ejemplo concreto)*
 
 ```
-S — "En el lanzamiento de [producto/feature], compliance exigía firma 
-     manuscrita escaneada. Tecnología había diseñado firma digital OTP. 
-     Ambos equipos tenían razón dentro de su dominio."
+S — "En el lanzamiento del canal digital de Ágora, compliance exigía 
+     que todos los contratos llevaran firma manuscrita escaneada.
+     Tecnología había diseñado el flujo completo con firma digital OTP.
+     Ambos tenían razón dentro de su dominio — compliance por el riesgo 
+     regulatorio, tecnología por la experiencia del usuario."
 
 T — "Mi trabajo era desbloquearlo sin sacrificar ni el cumplimiento 
      regulatorio ni el tiempo de lanzamiento."
@@ -395,8 +455,12 @@ A — "Lo que hice fue: entender el porqué real de cada posición.
      Ambos equipos lo aceptaron porque la decisión se basó en datos, 
      no en jerarquía."
 
-R — "Lanzamos en fecha con firma OTP. 
-     V2 con firma avanzada se planificó para el trimestre siguiente."
+R — "Lanzamos en fecha con firma OTP en Trujillo.
+     Los 10 clientes piloto completaron contratos sin ningún bloqueador 
+     regulatorio — OTP cumplía el estándar de trazabilidad para el 
+     rango de montos del piloto.
+     V2 con firma avanzada certificada entró en el trimestre siguiente, 
+     cuando el volumen del canal lo justificó."
 ```
 
 ---
@@ -407,38 +471,51 @@ R — "Lanzamos en fecha con firma OTP.
 
 **Q9: ¿Cómo describes tu rol en cada ceremonia del squad?**
 
-*(Situacional — STAR adaptado como 'así es mi estilo')*
+*(Comportamental — historia real de Ágora con squad ágil)*
 
 ```
-S — "Trabajo con squads donde el PM puede convertirse en el cuello 
-     de botella si no está disponible en el momento correcto."
+S — "En Ágora trabajé con un squad ágil donde la PM era el único 
+     punto de contacto entre tecnología, negocio y el cliente.
+     Si yo no estaba disponible en el momento correcto, 
+     el equipo se bloqueaba."
 
-T — "Mi trabajo en cada ceremonia es específico y distinto."
+T — "Definí un rol específico para cada ceremonia para que el equipo 
+     pudiera avanzar sin esperar decisiones de último minuto."
 
-A — "Así lo aplico:
+A — "Así lo ejecuté en Ágora:
+
+     REFINAMIENTO (la más importante — 1-2h por semana):
+     Traducía las hipótesis de negocio en historias de usuario 
+     con criterios de aceptación verificables.
+     El equipo que entiende el PORQUÉ de una feature toma mejores 
+     micro-decisiones durante el desarrollo — sin consultarme cada hora.
+     Si una historia llegaba sin AC claro → la devolvía, no la refinaba.
+
+     SPRINT PLANNING (2-4h):
+     Mi regla: ninguna historia entra al sprint sin criterios de 
+     aceptación claros. Si algo llega sin ellos → sale del sprint.
+     Mejor dejar la historia para el siguiente ciclo que construir 
+     algo que nadie sabe cómo verificar.
 
      DAILY (15 min):
-     Mi rol: escuchar blockers, no reportar status.
-     Si un developer está bloqueado por una definición → la resuelvo ese día.
-
-     PLANNING (2-4h):
-     Mi rol: asegurarme de que CADA historia tenga criterios de aceptación 
-     claros ANTES de entrar al sprint. Si una historia no tiene AC → la saco.
-
-     REFINAMIENTO (1-2h):
-     Mi rol más importante. Aquí aclaro el PORQUÉ de cada feature, no solo 
-     el QUÉ. El equipo que entiende el porqué toma mejores micro-decisiones.
+     Mi rol es escuchar blockers — no reportar status.
+     Si un developer está bloqueado por una definición de negocio 
+     → la resuelvo ese día, no mañana.
+     Cada día que un blocker queda abierto es un día de sprint perdido.
 
      REVIEW (1h):
-     Mi rol: representar la voz del cliente. 
-     Pregunta que hago siempre: '¿el cliente entendería esto sin explicación?'
+     Represento la voz del cliente.
+     Pregunta que siempre hago: '¿el cliente entendería este flujo 
+     sin que nadie se lo explique?'
 
      RETROSPECTIVA:
-     Mi rol: participar como miembro del equipo, no como jefe. 
-     Hablo de proceso, no de personas."
+     Participo como miembro del equipo, no como jefe.
+     Hablo de proceso, no de personas ni de resultados de negocio."
 
-R — "El resultado es un squad que no está esperando respuestas del PM 
-     para avanzar, porque las preguntas se resolvieron antes del sprint."
+R — "El resultado en Ágora: el squad entregó todas las releases 
+     planificadas y superamos los objetivos en un 20%.
+     El equipo no me esperaba para avanzar porque las preguntas 
+     se resolvían en refinamiento, no en medio del sprint."
 ```
 
 ---
@@ -509,8 +586,14 @@ A — "Primero entiendo el por qué: ¿es un problema de estimación,
      no los sorprendo con un retraso — los involucro en la decisión."
 
 R — "El piloto lanzó en fecha con workaround manual.
-     La integración SUNAT automática entró en el siguiente sprint.
-     Los 10 clientes piloto completaron operaciones sin fricciones."
+     Los 10 clientes piloto completaron sus operaciones sin fricciones 
+     — no notaron que la validación SUNAT era manual en el backend.
+     La integración automática entró en el siguiente sprint, 
+     cuando el equipo ya tenía la documentación de la API completa.
+     Lección de Ágora: si el workaround no tiene un criterio explícito 
+     de cuándo automatizarlo, se vuelve permanente.
+     Criterio documentado: cuando el 50% de las operaciones piloto 
+     sean autoservicio completo, la automatización SUNAT pasa a Tier 1."
 ```
 
 ---
@@ -540,10 +623,15 @@ A — "El mayor riesgo no es técnico — es de adopción.
         no elimina al ejecutivo en V1 — lo libera de tareas repetitivas 
         para que se enfoque en clientes con necesidades complejas."
 
-R — "El riesgo de adopción se mitiga antes del lanzamiento, 
-     no después. Si en el piloto el 40% completa la primera operación 
-     solo, el canal es viable. Si no llega a ese threshold, 
-     hay que rediseñar antes de escalar."
+R — "El riesgo de adopción se mitiga antes del lanzamiento, no después.
+     En Ágora usamos exactamente esta lógica: arrancamos en Trujillo 
+     — la ciudad más conservadora del grupo piloto — para probar el 
+     caso más difícil primero. El canal pasó el threshold de adopción.
+     Escalamos a Lima y Piura con evidencia, no con esperanza.
+     El resultado: S/3 millones en ventas en 6 meses.
+     Criterio de go/no-go para Factoring: si el 40% de los clientes 
+     piloto completa la primera operación sin ayuda humana, 
+     el canal es viable para escalar."
 ```
 
 ---
@@ -569,83 +657,109 @@ A — "Comparo por cohorte de clientes, no por canal en abstracto:
 
 R — "Si el canal digital tiene mejor frecuencia, mismo o menor default, 
      y NPS más alto — es un éxito aunque el ticket sea menor al inicio. 
-     Eso me dice que estamos captando un segmento nuevo, no canibalizando 
-     el canal existente."
+     Eso indica que estamos captando un segmento nuevo, no canibalizando 
+     el canal existente.
+     En Ágora el pivote financiero siguió este patrón: el canal digital 
+     no compitió frontalmente con el presencial al inicio — captó las 
+     operaciones de menor complejidad y fue ganando terreno con la frecuencia.
+     S/60 millones en ingresos con gastos acotados fue el resultado 
+     de esa estrategia de canal diferenciado."
 ```
 
 ---
 
-**Q11: ¿Qué harías en los primeros 30-60-90 días?**
+**Q16: ¿Qué harías en los primeros 30-60-90 días?**
 
-*(Situacional — STAR como plan de acción)*
+*(Comportamental — historia real de Ágora aplicada al contexto Factoring)*
 
 ```
-S — "Llego a un producto que existe en canal presencial pero no tiene 
-     canal digital. Hay una organización con equipos formados, compromisos 
-     ya tomados, y una cultura que no conozco."
+S — "Llego a un producto financiero que opera 100% en canal presencial.
+     Hay una organización con equipos formados — tecnología, crédito, 
+     comercial, compliance — compromisos ya tomados, y un cliente 
+     PyME que confía en el ejecutivo humano más que en cualquier app."
 
-T — "En 90 días necesito entender el problema real, alinear a los 
-     stakeholders, y lanzar algo que demuestre tracción."
+T — "En 90 días necesito entender el problema real sin asumir nada, 
+     alinear a los stakeholders, y tener un piloto en manos de 
+     clientes reales."
 
-A — "Lo estructuro en tres fases:
+A — "Estructuro en tres fases — exactamente como lo hice en Ágora:
 
-     DÍA 1-30: ESCUCHAR
-     - 10 entrevistas con clientes actuales del canal presencial
-     - Shadow en sucursal: ver el proceso en vivo
-     - Reuniones 1:1 con cada área (tech, crédito, compliance, comercial)
-     - Leer todos los tickets/incidencias del sistema actual
-     - Entender el roadmap existente y los compromisos ya tomados
+     DÍA 1-30: DATA Y CAMPO (no construir nada todavía)
+     — Analizo la data del canal actual: volumen mensual de operaciones,
+       tiempo por paso, tasa de aprobación, monto promedio, drop-off.
+       Esto me da el baseline antes de hablar con nadie.
+     — 10 entrevistas: 4 clientes actuales del canal presencial,
+       3 ejecutivos de sucursal, 2 del área de crédito, 1 de compliance.
+       Pregunta clave: '¿cuándo necesitaste liquidez urgente y qué fue 
+       lo más frustrante del proceso?'
+     — Shadow en sucursal: ver el proceso en vivo, no leer sobre él.
+     — 1:1 con cada área para entender compromisos ya tomados 
+       y el roadmap existente.
 
-     DÍA 31-60: DIAGNOSTICAR
-     - Mapear el journey actual completo con métricas reales
-     - Identificar las 3 fricciones de mayor impacto (por frecuencia y costo)
-     - Hacer sizing: cuánto volumen, cuánto cuesta hoy, cuánto puede mejorar
-     - Proponer el MVP: qué funciones cubren el 80% del caso de uso
-     - Validar el MVP con 5 clientes antes de escribir una sola historia
+     DÍA 31-60: DIAGNÓSTICO Y MVP
+     — Mapeo el journey completo con tiempos y fricciones cuantificadas.
+     — Aplico Pareto: el 20% de fricciones que explica el 80% del 
+       tiempo perdido — esas son las primeras en el backlog.
+     — Sizing: cuánto volumen tiene el canal presencial hoy, 
+       cuánto cuesta por operación, cuánto puede mejorar el digital.
+     — Propongo el MVP y lo valido con 5 clientes antes de escribir 
+       una sola historia de usuario.
+       En Ágora esta validación nos ahorró 2 sprints de desarrollo.
 
-     DÍA 61-90: CONSTRUIR Y MEDIR
-     - Primer sprint con el equipo
-     - Definir la línea de base de los KPIs
-     - Lanzar piloto con 10-20 clientes seleccionados
-     - Primera review con stakeholders: datos, no promesas"
+     DÍA 61-90: PILOTO Y PRIMERA SEÑAL
+     — Primer sprint con el equipo.
+     — Establezco la línea de base de los KPIs: tasa de adopción 
+       digital, FCR, SLA, activation rate.
+     — Lanzo piloto con 10-20 clientes seleccionados — los de mayor 
+       NPS con el canal presencial, no los escépticos.
+     — Primera review con stakeholders: datos, no promesas."
 
-R — "Al día 90 tengo: un canal digital en manos de clientes reales, 
-     métricas base establecidas, y la primera señal de si el approach 
-     es correcto o necesita ajuste."
+R — "Al día 90: canal digital en manos de clientes reales,
+     métricas base establecidas, y la primera señal de si el 
+     approach es correcto o necesita ajuste.
+     En Ágora este ciclo nos llevó a S/3M en ventas en 6 meses."
 ```
 
 ---
 
-**Q12: ¿Cómo manejas la resistencia de clientes a migrar al canal digital?**
+**Q14: ¿Cómo manejas la resistencia de clientes a migrar al canal digital?**
 
-*(Comportamental — usa STAR con experiencia real o caso concreto)*
+*(Comportamental — historia real de Ágora, contexto financiero)*
 
 ```
-S — "En [producto anterior], teníamos clientes que llevaban años 
-     usando el canal presencial. Para ellos el ejecutivo era la garantía 
-     de que el proceso funcionaría."
+S — "En Ágora cuando lanzamos el canal digital, los primeros clientes 
+     llevaban meses operando con el ejecutivo presencial.
+     Para ellos el ejecutivo no era un canal — era la garantía de 
+     que su operación iba a salir bien.
+     Pedirles que usaran una app era pedirles que confiaran en algo 
+     que no podían ver ni tocar."
 
-T — "Tenía que migrar ese segmento sin perder la confianza que habían 
-     construido con el canal físico."
+T — "Tenía que migrar ese segmento sin perder la confianza que 
+     habían construido con el canal físico."
 
-A — "Identifiqué dos causas distintas de resistencia y las traté diferente:
+A — "Diagnostiqué dos causas distintas y las traté diferente:
 
-     Para la DESCONFIANZA:
-     No intenté convencer — demostré. Arranqué con los clientes que ya 
-     tenían la mejor relación con el banco, los usé como referentes, 
-     y mostré los resultados en números: tiempo, costo, seguridad.
-     Cuando un cliente satisfecho le dice a otro 'funcionó', pesa más 
-     que cualquier campaña de marketing.
+     DESCONFIANZA (el cliente no cree que el digital funcione):
+     No convencer — demostrar. Empecé con los clientes que ya 
+     tenían el NPS más alto con el canal existente, no con los 
+     escépticos. Los usé como pilotos y como referentes.
+     Cuando un cliente dice a otro 'funcionó y me tomó 2 horas 
+     en vez de 3 días' — eso vale más que cualquier campaña.
 
-     Para la FRICCIÓN:
-     Si alguien prefería ir a la sucursal porque el proceso digital era 
-     complicado, el problema era mío, no del cliente. Cada abandono en 
-     el flujo digital era una oportunidad de simplificar. 
-     El digital tiene que ser más fácil, no solo más rápido."
+     FRICCIÓN (el cliente quiere usar el digital pero es difícil):
+     Cada abandono en el flujo era mi responsabilidad, no del cliente.
+     Si alguien prefería ir a la sucursal porque la app era 
+     complicada, el problema era mío.
+     Medía el drop-off por paso del funnel y atacaba el punto 
+     de mayor abandono primero.
+     Regla: si el usuario necesita leer instrucciones para completar 
+     el flujo, el diseño falló."
 
-R — "Resultado: [X% de los clientes piloto completaron al menos una 
-     operación digital en los primeros 30 días / NPS del canal digital 
-     superó al presencial en N puntos]."
+R — "En Ágora arrancamos en Trujillo — la ciudad más conservadora 
+     del grupo piloto — para probar el caso más difícil primero.
+     El canal funcionó. Luego Lima, luego Piura.
+     El canal se lanzó en 3 meses y en 6 meses generamos 
+     S/3 millones en ventas."
 ```
 
 ---
