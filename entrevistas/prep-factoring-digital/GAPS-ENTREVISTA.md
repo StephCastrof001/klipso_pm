@@ -50,9 +50,46 @@
 
 ---
 
+## P3 — Customer Journey As-Is / To-Be
+
+### ✅ Bien
+- Identificó actores correctos: personal humano, cliente, sistema de crédito
+- Propuso canal digital con landing + documentos + análisis automatizado
+- Mencionó tiempo de desembolso como fricción clave
+- Mapear actores para automatizar → thinking correcto
+
+### ❌ Gaps
+1. **Sin pasos numerados** — el journey quedó como descripción, no como mapa. Hiring espera: Paso 1... Paso 2... con tiempos reales
+2. **"Flexiones"** en vez de "fricciones" — tercer registro. Practicar este término
+3. **Fricciones no nombradas específicamente** — no basta decir "hay fricciones", hay que nombrarlas: desplazamiento x2, caja negra, doble visita, evaluación manual
+4. **To-be incompleto** — faltó: validación SUNAT automática, firma digital, notificación estado en tiempo real, tiempo esperado (¿de 72h a cuánto?)
+5. **"Cuenta nueva"** — error de dominio. En banca regulada no se crean cuentas al vuelo. Correcto: desembolso a cuenta existente del cliente
+
+### 💡 Estructura correcta As-Is
+```
+Paso 1: Cliente detecta necesidad → reúne docs (1-2 días)
+Paso 2: Va a sucursal, hace cola (45-60 min)
+Paso 3: Ejecutivo revisa manualmente (30 min)
+Paso 4: Evaluación crédito (24-48h — caja negra)
+Paso 5: Cliente vuelve a firmar físico (otro desplazamiento)
+Paso 6: Desembolso (24-72h)
+TOTAL: 3-5 días | FRICCIONES: desplazamiento x2, caja negra, proceso manual
+```
+
+### 💡 Estructura correcta To-Be
+```
+Paso 1: Login app/portal
+Paso 2: Sync automático facturas SUNAT
+Paso 3: Selecciona facturas → ve monto neto en tiempo real
+Paso 4: Score crediticio automático (minutos)
+Paso 5: Firma digital con OTP
+Paso 6: Desembolso a cuenta existente (2-4h)
+TOTAL: menos de 4 horas | FRICCIONES ELIMINADAS: todas las del as-is
+```
+
 ## Pendientes (simulación en curso)
 
-- [ ] P3 — Customer journey as-is / to-be
+- [x] P3 — Customer journey as-is / to-be
 - [ ] P4 — Cómo decides qué fricciones atacar primero
 - [ ] P5 — KPIs para los primeros 6 meses
 - [ ] P6 — Trade-off: feature valiosa vs 3 meses de dev
