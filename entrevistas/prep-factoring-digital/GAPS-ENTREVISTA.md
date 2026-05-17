@@ -115,10 +115,11 @@ TOTAL: menos de 4 horas | FRICCIONES ELIMINADAS: todas las del as-is
 - [ ] P6 — Trade-off: feature valiosa vs 3 meses de dev
 - [ ] P7 — Priorización con stakeholders en conflicto
 - [ ] P8 — Rol en ceremonias ágiles
-- [ ] P9 — Tecnología dice "no se puede"
-- [ ] P10 — Primeros 30-60-90 días
-- [ ] P11 — Mayor riesgo del proyecto
-- [ ] P12 — Preguntas al hiring manager
+- [ ] P9 — Requerimiento nuevo en medio de un sprint
+- [ ] P10 — Tecnología dice "no se puede"
+- [ ] P11 — Primeros 30-60-90 días
+- [ ] P12 — Mayor riesgo del proyecto
+- [ ] P13 — Preguntas al hiring manager
 
 ---
 

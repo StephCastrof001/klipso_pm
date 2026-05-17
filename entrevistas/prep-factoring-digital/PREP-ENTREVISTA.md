@@ -176,53 +176,134 @@ R — "Resultado esperado: tiempo de 3-5 días a menos de 4 horas.
 
 **Q5: ¿Qué KPIs definirías para medir el éxito del canal digital?**
 
-*(Situacional — STAR como marco de decisión)*
+*(Situacional + Comportamental — la North Star cambia según la etapa del producto)*
 
 ```
-S — "Estamos lanzando un canal digital para un producto que hoy es 100% 
-     presencial. No hay línea de base digital — hay que construirla."
+S — "En Ágora pasamos por dos momentos distintos que requirieron 
+     North Stars distintas. Usar la misma métrica en un canal nuevo 
+     que en uno que reemplaza a un canal tradicional es un error."
 
-T — "Necesito definir métricas que midan adopción, calidad del proceso 
-     y satisfacción del cliente — sin perder de vista el negocio."
+T — "La métrica correcta depende de la etapa de madurez del producto, 
+     no de una lista genérica de KPIs."
 
-A — "Estructuro los KPIs en dos niveles:
+A — "Estructuro en dos etapas y aplico la regla 5-3-1:
+     1 North Star → 3 inputs que la mueven → 5 métricas operacionales
 
-     NORTH STAR METRIC (el número que define el éxito del producto):
-     → % de operaciones procesadas en canal digital
-       (meta año 1: 30% | año 2: 60%)
+     ETAPA 1 — Canal nuevo (0 a 1):
+     North Star: Usuarios activos mensuales
+     → ¿La gente usa el canal siquiera?
+     Inputs: % que completa primera operación | FCR | tiempo hasta primera op
 
-     MÉTRICAS AARM por etapa:
-     
-     ACQUISITION:
-     - Nuevas empresas activadas en canal digital / mes
-     - % de clientes actuales que migran al canal digital
-     - Tasa de abandono en onboarding digital
-     
-     ACTIVATION:
-     - % de registrados que completan primera operación
-     - Tiempo promedio primera operación (target: <15 min)
-     - Drop-off por paso del funnel
-     
-     RETENTION:
-     - % de clientes que repiten en 30 días
-     - Frecuencia promedio de operaciones / mes
-     
-     MONETIZACIÓN / OPERACIONAL:
-     - Tiempo promedio de aprobación digital (target: <30 min)
-     - Tasa de aprobación digital vs presencial
-     - Costo por operación digital vs presencial"
+     ETAPA 2 — Reemplazando canal tradicional:
+     North Star: Tasa de adopción digital
+     → % de operaciones procesadas en canal digital vs total
+       (meta mes 3: 15% | mes 6: 30%)
 
-R — "Con estos KPIs puedo responder las dos preguntas del negocio: 
-     ¿está creciendo el canal digital? y ¿está funcionando bien?"
+     3 inputs que mueven la North Star:
+     1. Activation rate — % registrados que completan primera operación
+        (target: >40% en 14 días — leading indicator de retención)
+     2. D30 Retention — % que repite operación en primeros 30 días
+        (target: >20%)
+     3. SLA digital — % de operaciones aprobadas en <30 min
+        (vs 24-48h del canal presencial — mide si el canal funciona)
+
+     5 métricas operacionales por etapa AARRR:
+     Acquisition : % clientes del canal presencial que se registran
+     Activation  : Time to First Value — tiempo hasta primera op (<15 min)
+     Retention   : Drop-off por paso del funnel (dónde abandona la gente)
+     Revenue     : ROI canal digital vs presencial — costo op + default rate
+     Referral    : NPS post-operación (target >50)
+
+     FCR — First Contact Resolution:
+     Si el usuario resolvió sin contactar soporte ni ir a sucursal.
+     FCR alto = el diseño funciona solo.
+     FCR bajo = el onboarding tiene fricciones no resueltas."
+
+R — "El ROI del canal fue clave porque nos permitió visibilizar si las 
+     acciones que tomábamos eran las correctas. Cumplimos los tiempos 
+     acordados y superamos los objetivos en un 30% sobre lo planificado."
+```
+
+**Métricas vanidad a evitar:**
+```
+❌ Total usuarios registrados → siempre sube aunque nadie opere
+❌ Número de logins          → no indica si resolvió su necesidad
+❌ Descargas de la app       → no predice retención ni revenue
+✅ Activation rate, D30 Retention, FCR, SLA digital, ROI por canal
 ```
 
 ---
 
-### BLOQUE C: Backlog y Priorización
+### BLOQUE C: Backlog, Priorización y Trade-offs
 
 ---
 
-**Q6: ¿Cómo priorizas el backlog de un producto financiero regulado?**
+**Q6: Tecnología dice que la feature más valiosa toma 3 meses. El negocio quiere lanzar en 6 semanas. ¿Qué haces?**
+
+*(Comportamental — trade-off scope vs tiempo)*
+
+```
+S — "Tecnología me dice que la feature más valiosa — firma digital 
+     biométrica — toma 3 meses. El negocio quiere lanzar en 6 semanas."
+
+T — "Mi trabajo no es elegir un bando — es encontrar el scope mínimo 
+     que cumpla el objetivo de negocio en el tiempo disponible."
+
+A — "Tres pasos:
+     1. Voy con el negocio primero: ¿qué es lo MÍNIMO que tiene que 
+        salir en 6 semanas para que el lanzamiento tenga valor?
+     2. Con ese scope reducido vuelvo a tecnología: ¿cuánto toma esto?
+     3. Si hay gap, busco con ambos qué parte puede ser manual o 
+        semi-automatizada temporalmente — no todo tiene que ser 
+        automático en V1.
+     Convoco mesa conjunta: pongo las opciones sobre la tabla.
+     Qué sale en 6 semanas. Qué va a V2. Qué puede hacerse 
+     manualmente mientras tanto. Cada área ve el trade-off completo."
+
+R — "Lanzamos con el scope mínimo viable en fecha.
+     El negocio cumplió su objetivo. Tecnología entregó sin deuda técnica.
+     La parte manual se automatizó en el siguiente ciclo."
+```
+
+---
+
+**Q7: El área comercial quiere más features para atraer clientes. El área de crédito quiere reforzar controles de riesgo antes de crecer. Eres la PM. ¿Cómo lo resuelves?**
+
+*(Comportamental — stakeholders en conflicto con historia real)*
+
+```
+S — "En Ágora teníamos cuatro áreas compitiendo por el mismo backlog: 
+     operaciones, negocio, comercial y marketing. 
+     Todos con requerimientos urgentes, todos con razones válidas."
+
+T — "Tenía que priorizar sin perder la confianza de ningún área 
+     y sin que el equipo técnico estuviera bloqueado."
+
+A — "Establecí dependencias entre requerimientos:
+     Primero identifiqué cuáles eran CRÍTICOS — impacto en usuarios 
+     activos o riesgo de negocio — y cuáles eran COMPLEMENTARIOS.
+     Con esa clasificación hablé con cada área:
+     'Este requerimiento entra primero porque afecta X usuarios o 
+     bloquea Y proceso. El tuyo entra en el siguiente ciclo porque 
+     agrega valor pero no bloquea nada hoy.'
+     
+     Para el caso comercial vs crédito específicamente:
+     Cuantifico el esfuerzo y riesgo de cada iniciativa.
+     Si reforzar controles toma 2 meses y la feature comercial 6 meses,
+     el orden se decide por datos, no por jerarquía.
+     Busco también el mínimo viable de cada lado:
+     ¿Puede comercial salir con una feature puntual más pequeña?
+     ¿Puede crédito reforzar los controles más críticos primero?
+     La clave: cada área entiende el criterio, no solo la decisión."
+
+R — "Resolvimos muchas contingencias sin escalar.
+     Cumplimos todas las entregas planificadas 
+     y superamos los objetivos en un 20%."
+```
+
+---
+
+**Q8: ¿Cómo priorizas el backlog de un producto financiero regulado?**
 
 *(Comportamental — usa STAR con experiencia real o caso concreto)*
 
@@ -362,11 +443,112 @@ R — "El resultado es un squad que no está esperando respuestas del PM
 
 ---
 
+---
+
+**Q10: Estás en el sprint day 5. El área comercial llega con un requerimiento urgente. ¿Qué haces?**
+
+*(Comportamental — gestión de sprint bajo presión)*
+
+```
+S — "En Ágora era frecuente que llegaran requerimientos urgentes 
+     en medio del sprint — desde comercial, operaciones, negocio."
+
+T — "Mi regla es no modificar el sprint una vez que inicia.
+     Pero hay excepciones — y necesito un criterio claro."
+
+A — "Aplico un test de dos condiciones:
+     1. ¿El requerimiento afecta a usuarios activos HOY?
+     2. ¿El costo de no hacerlo supera el costo de romper el sprint?
+     
+     Si ambas respuestas son SÍ → es crítico, entra al sprint.
+        Comunico inmediatamente a todos los stakeholders qué quedó 
+        de lado y por qué. No como sorpresa al final — en el momento.
+     
+     Si alguna respuesta es NO → va al backlog.
+        Entra al siguiente planning con toda la información.
+        El área que lo pidió recibe una fecha concreta, no un 'veremos'."
+
+R — "El equipo mantuvo cadencia de sprints estable.
+     Los stakeholders confiaban en el proceso porque entendían 
+     los criterios — sus requerimientos no se ignoraban, 
+     se gestionaban con lógica y transparencia."
+```
+
+---
+
 ### BLOQUE E: Preguntas difíciles
 
 ---
 
-**Q10: ¿Cómo medirías si el canal digital está siendo exitoso vs el presencial?**
+**Q11: En medio del sprint, el tech lead te dice que la integración con SUNAT toma el doble de lo estimado. ¿Cómo reaccionas?**
+
+*(Situacional — blocker técnico inesperado)*
+
+```
+S — "Estamos en sprint. La integración con SUNAT — que valida las 
+     facturas electrónicas en tiempo real — era el corazón del MVP.
+     El tech lead dice que toma el doble."
+
+T — "Necesito desbloquearlo sin cancelar el sprint ni perder la fecha 
+     de lanzamiento con los clientes piloto."
+
+A — "Primero entiendo el por qué: ¿es un problema de estimación,
+     de documentación de la API de SUNAT, o de un blocker nuevo?
+     
+     Con esa información evalúo tres opciones:
+     Opción 1 — Workaround manual: el ejecutivo valida la factura 
+                contra SUNAT manualmente para el piloto. 
+                Se automatiza en V2.
+     Opción 2 — Scope reducido: lanzar sin validación SUNAT en V1,
+                con validación manual como gate. 
+                Riesgo controlado para piloto pequeño.
+     Opción 3 — Extender el sprint: solo si el impacto al cliente
+                de no tener SUNAT es bloqueante para el piloto.
+     
+     Comunico a los stakeholders el trade-off antes de decidir:
+     no los sorprendo con un retraso — los involucro en la decisión."
+
+R — "El piloto lanzó en fecha con workaround manual.
+     La integración SUNAT automática entró en el siguiente sprint.
+     Los 10 clientes piloto completaron operaciones sin fricciones."
+```
+
+---
+
+**Q12: ¿Cuál es el mayor riesgo de este proyecto y cómo lo mitigarías?**
+
+*(Estratégico — visión de riesgo PM)*
+
+```
+S — "Estamos construyendo un canal digital para un producto financiero 
+     regulado, con clientes PyME que confían en el ejecutivo humano."
+
+T — "Necesito identificar el riesgo que puede matar el proyecto — 
+     no el más técnico, sino el más real."
+
+A — "El mayor riesgo no es técnico — es de adopción.
+     Puedes construir el mejor canal digital del mercado y que nadie 
+     lo use porque los clientes siguen llamando al ejecutivo.
+     
+     Lo mitigo en tres frentes:
+     1. PILOTO con clientes de alto NPS: empiezo con los que ya 
+        confían en el banco, no con los escépticos. 
+        Ellos se convierten en referentes.
+     2. DISEÑO que no asume conocimiento: si el usuario necesita 
+        leer instrucciones, el diseño falló. FCR es el guardrail.
+     3. EJECUTIVO como aliado, no como enemigo: el canal digital 
+        no elimina al ejecutivo en V1 — lo libera de tareas repetitivas 
+        para que se enfoque en clientes con necesidades complejas."
+
+R — "El riesgo de adopción se mitiga antes del lanzamiento, 
+     no después. Si en el piloto el 40% completa la primera operación 
+     solo, el canal es viable. Si no llega a ese threshold, 
+     hay que rediseñar antes de escalar."
+```
+
+---
+
+**Q13: ¿Qué medirías para comparar canal digital vs canal presencial?**
 
 *(Analítico — STAR como metodología de análisis)*
 
