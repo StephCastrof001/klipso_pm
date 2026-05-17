@@ -14,6 +14,8 @@
 | "¿Cómo haces discovery sin data?" | Caso 1 (0-to-1) |
 | "¿Cómo priorizas con múltiples stakeholders?" | Caso 2 (pivote financiero) |
 | "¿Cuál es tu mayor logro como PM?" | Caso 1 o Caso 2 según contexto del rol |
+| "¿Cómo decides qué fricciones atacar primero?" | Caso 3 (matriz esfuerzo/impacto) |
+| "¿Cómo priorizas el backlog?" | Caso 3 (Pareto + sprint evidence) |
 
 ---
 
@@ -93,7 +95,48 @@
 
 ---
 
-## CASOS PENDIENTES DE COMPLETAR — Con guías para recordar la historia
+---
+
+## CASO 3 — Ágora: Priorización de fricciones con Pareto + matriz esfuerzo/impacto
+
+**Contexto:** Ágora, etapa de discovery con más de 10 fricciones mapeadas en el canal.
+**Relevancia directa:** Preguntas de priorización de backlog, decisión de qué atacar primero, metodología de discovery.
+
+### STAR
+
+**S — Situation:**
+> "En Ágora, durante la etapa de discovery, teníamos mapeadas más de diez fricciones
+> en el canal — todo lo que hacía que el proceso no se completara en el tiempo estimado."
+
+**T — Task:**
+> "El reto no era saber que existían fricciones. Era decidir cuál atacar primero
+> con un equipo y un backlog limitados."
+
+**A — Action:**
+> "Lo que hicimos fue construir una matriz de esfuerzo e impacto para cada fricción.
+> Medimos dos dimensiones: qué tan difícil era resolverla técnicamente,
+> y cuánto afectaba al tiempo total del proceso.
+> Con esa matriz aplicamos el principio de Pareto: identificamos el 20% de fricciones
+> que explicaban el 80% del tiempo perdido — y esas fueron las primeras en entrar al sprint."
+
+**R — Result:**
+> "En dos o tres sprints ya habíamos reducido las fricciones del canal en un 80%.
+> El equipo podía ver el impacto antes de terminar el trimestre."
+
+### Métricas clave
+- Fricciones identificadas: **+10**
+- Sprints para ver resultado: **2-3 sprints**
+- Reducción de fricciones: **80%**
+
+### Pregunta de seguimiento frecuente
+> "¿Cómo mediste esa reducción del 80%?"
+> Respuesta: "Con el tiempo total del proceso por operación antes y después.
+> Si el proceso tardaba X días y pasó a Y días, las fricciones que explican esa brecha
+> son las que atacamos primero."
+
+---
+
+## SLOTS PENDIENTES DE COMPLETAR — Con guías para recordar la historia
 
 > Estos son los tipos de STAR más frecuentes en entrevistas PM senior.
 > Cada slot tiene: la pregunta exacta, qué evalúa el hiring manager, y la estructura a completar.
@@ -101,7 +144,7 @@
 
 ---
 
-### CASO 3 — Conflicto entre stakeholders
+### CASO 4 — Conflicto entre stakeholders
 
 **Pregunta tipo:** *"¿Cómo manejaste un conflicto entre tecnología y negocio?"* o *"Cuéntame de una situación donde tuviste que alinear a equipos con objetivos distintos."*
 

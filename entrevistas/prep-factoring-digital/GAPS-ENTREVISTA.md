@@ -87,10 +87,30 @@ Paso 6: Desembolso a cuenta existente (2-4h)
 TOTAL: menos de 4 horas | FRICCIONES ELIMINADAS: todas las del as-is
 ```
 
+## P4 — Priorización de fricciones
+
+### ✅ Bien
+- Usó Pareto (20/80) → vocabulario de priorización correcto
+- Mencionó esfuerzo + impacto como dimensiones → matriz correcta
+- Resultado con número concreto: 80% reducción en 2-3 sprints
+- Historia real de Ágora → credibilidad
+
+### ❌ Gaps
+1. **"Flexiones"** en vez de **"fricciones"** — cuarta vez. Practicar en voz alta hasta que salga automático
+2. **"Jordi"** en vez de **"journey"** — en entrevista presencial cuidar pronunciación
+3. **"Formato raíz"** → decir **"matriz de esfuerzo e impacto"** o **"análisis de causa raíz"**
+4. **Sin nombrar la dimensión de medición** — "reducción de fricciones en 80%" necesita ancla: ¿reducción en qué? → en tiempo total del proceso por operación
+
+### 💡 Pregunta de seguimiento esperada
+> "¿Cómo mediste ese 80%?"
+> Respuesta correcta: "Con el tiempo total por operación antes y después. Si el proceso tardaba 5 días y pasó a 1 día, identificamos qué fricciones explicaban esos 4 días."
+
+---
+
 ## Pendientes (simulación en curso)
 
 - [x] P3 — Customer journey as-is / to-be
-- [ ] P4 — Cómo decides qué fricciones atacar primero
+- [x] P4 — Cómo decides qué fricciones atacar primero
 - [ ] P5 — KPIs para los primeros 6 meses
 - [ ] P6 — Trade-off: feature valiosa vs 3 meses de dev
 - [ ] P7 — Priorización con stakeholders en conflicto
