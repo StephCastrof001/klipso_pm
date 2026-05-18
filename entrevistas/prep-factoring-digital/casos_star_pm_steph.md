@@ -288,6 +288,95 @@ R: Lanzamos en [plazo]. Los usuarios [adoptaron / resolvieron su problema].
 
 ---
 
+## CASO 4 — Canal Digital de Atención / Tarjetas de Crédito
+
+**Contexto:** Canal de atención telefónica con 10,000 consultas/mes, migrado a digital con bot de autoservicio.
+**Relevancia:** Roles de canales digitales de atención, reducción de equipo, mejora de FCR y NPS.
+**Mejor para:** Laureate (canales digitales de atención), cualquier rol con foco en migración canal tradicional → digital.
+
+### STAR
+
+**S — Situation:**
+> "Teníamos un canal de atención de tarjetas de crédito con 10,000 consultas mensuales,
+> gestionado completamente por un equipo de 15 personas. Todo era manual."
+
+**T — Task:**
+> "Mi tarea era migrar ese volumen al canal digital sin perder calidad de atención
+> y mejorar los indicadores operativos del canal."
+
+**A — Action:**
+> "Mapeé el As-Is completo: identifiqué qué tipo de consultas eran repetitivas
+> y automatizables — esas fueron al bot. Las excepciones y casos complejos
+> los mantuve con agente humano. Diseñé el flujo de escalación para que el
+> contexto viajara con el usuario."
+
+**R — Result:**
+> "El bot absorbió el 80% del volumen — 8,000 de las 10,000 consultas pasaron
+> a self-service. El equipo pasó de 15 a 3 personas, que atienden solo
+> los casos complejos que escalan. El FCR mejoró más de 30%.
+> El NPS saltó de 30 a 65 puntos."
+
+### Métricas clave
+- Volumen canal: **10,000 consultas/mes**
+- Bot containment: **80%** del volumen
+- Reducción equipo: **15 → 3 personas**
+- FCR: **+30% mejora**
+- NPS: **30 → 65 puntos (+35 puntos)**
+
+### Pregunta de seguimiento frecuente
+> "¿Cómo sabes que el bot absorbió el 80%?"
+> Respuesta: "Con el volumen de escalaciones al agente vs. total de sesiones iniciadas
+> en el canal digital. Si de 10,000 sesiones solo 2,000 terminan con un agente humano,
+> el containment es 80%."
+
+---
+
+## CASO 5 — Definición de SLA: Chatbot Clínica
+
+**Contexto:** Diseño de SLA para canal digital de atención de una clínica.
+**Relevancia:** Preguntas sobre cómo se define el SLA de un canal digital — cualquier rol de canales.
+**Mejor para:** Laureate (SLA, NPS, FCR), roles de experiencia del cliente.
+
+### Metodología de definición de SLA
+
+> "El SLA no es un número arbitrario — lo derivo del comportamiento real del usuario.
+> Primero mapeo el As-Is del canal tradicional para identificar las fricciones.
+> Una de las métricas que miro es el punto de abandono: ¿hasta cuándo espera el usuario
+> antes de desistir?"
+
+### STAR
+
+**S — Situation:**
+> "En una clínica, implementé un chatbot de atención al cliente.
+> Antes del canal digital, los pacientes llamaban y esperaban — pero había
+> un punto de abandono claro que encontramos al analizar el canal."
+
+**T — Task:**
+> "Mi tarea era definir el SLA del canal digital: ¿en cuánto tiempo debía
+> responder el bot para que el paciente no abandonara?"
+
+**A — Action:**
+> "Analicé el canal tradicional y encontré que después de 10 minutos de espera,
+> los pacientes abandonaban sin resolver su consulta. Eso se convertía en pérdida
+> de venta o en un reclamo posterior. Con ese dato definí el SLA del bot: 10 minutos
+> era el techo máximo — y la promesa operativa era resolverlo antes."
+
+**R — Result:**
+> "Logramos que el 90% de las consultas se resolvieran en menos de 2 minutos.
+> Ese canal protegió ventas y resolvió reclamos por más de S/100,000."
+
+### Métricas clave
+- SLA definido: **10 minutos** (umbral de abandono del canal tradicional)
+- Resultado real: **90% resuelto en menos de 2 minutos**
+- Revenue protegido: **+S/100,000** (ventas + reclamos resueltos)
+
+### Por qué este caso es poderoso
+El SLA no fue inventado — fue derivado de data real del comportamiento del usuario.
+Eso es exactamente lo que un hiring manager quiere escuchar: que tus decisiones
+tienen evidencia detrás, no intuición.
+
+---
+
 ## BANCO DE NÚMEROS — Tener listos siempre
 
 | Métrica | Valor | En qué caso usarlo |
@@ -297,6 +386,13 @@ R: Lanzamos en [plazo]. Los usuarios [adoptaron / resolvieron su problema].
 | Revenue primeros 6 meses | +S/3 millones | Caso 1 — impacto de negocio |
 | Productos financieros creados | +10 | Caso 2 — capacidad de escala |
 | Revenue pivote financiero | +S/60 millones | Caso 2 — impacto mayor |
+| Canal tarjetas — containment bot | 80% | Caso 4 — migración a digital |
+| Canal tarjetas — reducción equipo | 15 → 3 personas | Caso 4 — eficiencia operativa |
+| Canal tarjetas — FCR | +30% | Caso 4 — calidad de atención |
+| Canal tarjetas — NPS | 30 → 65 puntos | Caso 4 — experiencia cliente |
+| Chatbot clínica — SLA | 10 min (umbral abandono) | Caso 5 — definición de SLA |
+| Chatbot clínica — resultado | 90% resuelto en 2 min | Caso 5 — ejecución |
+| Chatbot clínica — revenue protegido | +S/100,000 | Caso 5 — impacto de negocio |
 | Años de experiencia | 10 años | Q1 — credibilidad |
 
 ---
