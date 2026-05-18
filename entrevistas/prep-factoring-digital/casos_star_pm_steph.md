@@ -389,6 +389,76 @@ tienen evidencia detrás, no intuición.
 
 ---
 
+## CASO 6 — Segmentación propia sin depender de Data / Producto Financiero
+
+**Contexto:** Producto financiero con base de 4 millones de usuarios. Necesidad de segmentar para promociones personalizadas sin depender del área de Data.
+**Relevancia:** Preguntas de data-driven decisions, autonomía analítica, velocidad de ejecución.
+**Mejor para:** Cualquier rol con foco en analytics, growth, o gestión de clientes a escala.
+
+### STAR
+
+**S — Situation:**
+> "En un producto financiero con 4 millones de usuarios, necesitábamos asignar
+> promociones y beneficios personalizados por segmento. El cuello de botella era
+> el área de Data: cada solicitud tardaba 7 días."
+
+**T — Task:**
+> "Mi tarea era acortar ese tiempo sin sacrificar la calidad del análisis
+> — necesitábamos velocidad para ejecutar promociones en el momento correcto."
+
+**A — Action:**
+> "Construimos nuestra propia segmentación usando análisis de cohorte,
+> sin depender del equipo de Data. Con eso pasamos de 7 días a horas
+> para tener un segmento listo y una promoción activa."
+
+**R — Result:**
+> "Las promociones aumentaron su efectividad en más del 80%.
+> Solo con este enfoque generamos más de S/3 millones en venta incremental."
+
+### Métricas clave
+- Base de usuarios: **4 millones**
+- Tiempo de segmentación: **7 días → horas**
+- Efectividad de promociones: **+80%**
+- Venta incremental: **+S/3 millones**
+
+### Pregunta de seguimiento frecuente
+> "¿Qué herramienta usaste para el análisis de cohorte?"
+> *(Completar con la herramienta real: SQL, Python, Power BI, Excel...)*
+
+### Término correcto en entrevista
+- ✅ "análisis de **cohorte**"
+- ❌ NO decir "cogogote" — practicar: "co-hor-te"
+
+---
+
+## RESPUESTA TIPO — Gestión de resistencia al canal digital
+
+**Pregunta:** *"¿Cómo gestionas la resistencia del equipo humano cuando implementas un canal digital?"*
+
+**Framework de respuesta:**
+
+> "Mi posición es clara desde el inicio: el foco no es reemplazar al equipo — es
+> redirigirlo. El bot maneja las consultas repetitivas y de bajo valor. El equipo
+> humano se queda con lo que el bot no puede resolver: casos complejos, excepciones,
+> escalaciones de alto valor."
+>
+> "Lo que hacemos concretamente:
+> Primero, les mostramos que no van a perder su trabajo — lo que va a cambiar
+> es el tipo de trabajo que hacen, y hacia arriba.
+> Segundo, los equipamos con herramientas mejores que las que tenían antes.
+> Tercero — y esto es clave — los convertimos en expertos del canal digital:
+> ellos son los que monitorean el bot, identifican sus limitaciones, y retroalimentan
+> el entrenamiento. Sin ellos el bot no mejora."
+
+**Por qué funciona este enfoque:**
+- Elimina el miedo (no hay pérdida de trabajo en V1)
+- Da propósito nuevo (de operador a analista/trainer del bot)
+- Genera aliados internos para el canal digital
+
+**Nota:** Si te preguntan *"¿lo has hecho?"* — conectar con la historia del canal tarjetas (equipo 15→3) o la clínica.
+
+---
+
 ## BANCO DE NÚMEROS — Tener listos siempre
 
 | Métrica | Valor | En qué caso usarlo |
@@ -405,6 +475,10 @@ tienen evidencia detrás, no intuición.
 | Chatbot clínica — SLA | 10 min (umbral abandono) | Caso 5 — definición de SLA |
 | Chatbot clínica — resultado | 90% resuelto en 2 min | Caso 5 — ejecución |
 | Chatbot clínica — revenue protegido | +S/100,000 | Caso 5 — impacto de negocio |
+| Segmentación — base usuarios | 4 millones | Caso 6 — escala de operación |
+| Segmentación — tiempo | 7 días → horas | Caso 6 — velocidad de ejecución |
+| Segmentación — efectividad | +80% promociones | Caso 6 — impacto de negocio |
+| Segmentación — revenue | +S/3 millones incremental | Caso 6 — resultado financiero |
 | Años de experiencia | 10 años | Q1 — credibilidad |
 
 ---
