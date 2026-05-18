@@ -370,6 +370,18 @@ R: Lanzamos en [plazo]. Los usuarios [adoptaron / resolvieron su problema].
 - Resultado real: **90% resuelto en menos de 2 minutos**
 - Revenue protegido: **+S/100,000** (ventas + reclamos resueltos)
 
+### Pregunta de seguimiento frecuente
+> "¿Cómo sabías que 10 minutos era el límite?"
+> Respuesta: "Lo derivé del análisis del canal tradicional: revisé los registros
+> de llamadas entrantes, tiempos de espera por llamada, y lo validé con encuestas
+> a usuarios. Había un patrón claro — después de los 10 minutos, la tasa de
+> abandono se disparaba."
+
+### Fuentes de data usadas
+1. Registros de llamadas entrantes del canal tradicional
+2. Input de asesores (qué reportaban los usuarios al llamar)
+3. Encuestas a usuarios
+
 ### Por qué este caso es poderoso
 El SLA no fue inventado — fue derivado de data real del comportamiento del usuario.
 Eso es exactamente lo que un hiring manager quiere escuchar: que tus decisiones
