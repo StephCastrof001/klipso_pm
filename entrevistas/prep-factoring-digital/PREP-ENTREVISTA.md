@@ -469,7 +469,7 @@ R — "Lanzamos en fecha con firma OTP en Trujillo.
 
 ---
 
-**Q9: ¿Cómo describes tu rol en cada ceremonia del squad?**
+**Q11: ¿Cómo describes tu rol en cada ceremonia del squad?**
 
 *(Comportamental — historia real de Ágora con squad ágil)*
 
@@ -522,7 +522,7 @@ R — "El resultado en Ágora: el squad entregó todas las releases
 
 ---
 
-**Q10: Estás en el sprint day 5. El área comercial llega con un requerimiento urgente. ¿Qué haces?**
+**Q12: Estás en el sprint day 5. El área comercial llega con un requerimiento urgente. ¿Qué haces?**
 
 *(Comportamental — gestión de sprint bajo presión)*
 
